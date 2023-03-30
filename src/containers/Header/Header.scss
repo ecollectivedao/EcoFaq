@@ -1,0 +1,15 @@
+.header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+
+    background: linear-gradient(90deg, #e1ded344 0%, #cfe5e058 46.35%, #fcef634d 100%);
+    background-size: 200% 100%;
+
+    &__container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

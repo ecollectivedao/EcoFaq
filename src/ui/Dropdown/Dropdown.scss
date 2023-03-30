@@ -1,0 +1,40 @@
+.dropdown {
+    font-size: inherit;
+    max-width: 200px;
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+    &__title {
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    &__btn {
+        width: 15px;
+        height: 15px;
+        transform: rotate(90deg);
+        svg{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transition: 0.3s all ease;
+        }
+    }
+    &__body{
+        max-height: 0;
+        overflow: hidden;
+        padding-left: 10px;
+        transition: 0.3s all ease;
+        font-size: 15px;
+    }
+    &__body.active {
+        max-height: 300px;
+        padding-bottom: 5px;
+    }
+    &__btn.active svg{
+        transform: rotate(180deg);
+    }
+}
