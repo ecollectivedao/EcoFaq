@@ -8,7 +8,16 @@ export const DesktopMenu = () => {
 
     return (
         <ul className='menu__list'>
-            {/* li* */}
+            <li className="menu__list-item">
+                <a href="" className="menu__list-link">Ru FAQ</a>
+            </li>
+            <li className="menu__list-item">
+            <a href="" className="menu__list-link">Активные задания</a>
+            </li>
+            <li className="menu__list-item">Governance</li>
+            <li className="menu__list-item">Библиотека</li>
+            <li className="menu__list-item">Продукты СЕО</li>
+            <li className="menu__list-item">Archive</li>
         </ul>
     )
 }
