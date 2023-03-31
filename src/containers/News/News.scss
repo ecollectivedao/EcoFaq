@@ -11,8 +11,8 @@
         justify-content: center;
     }
     &__image {
+        max-height: 500px;
         width: 40%;
-        max-height: 100%;
         position: relative;
         z-index: -1;
         border-radius: 25px;
@@ -22,7 +22,7 @@
     &__image img {
         position: absolute;
         left: 12%;
-        top: -50px;
+        top: -30px;
         object-fit: contain;
         width: 80%;
         height: 80%;
@@ -34,7 +34,7 @@
     }
     &__title {
         color: var(--color-active);
-        font-weight: 600;
+        font-weight: 500;
         text-transform: uppercase;
         font-size: 13px;
     }
@@ -46,14 +46,12 @@
         color: var(--color-text2);
         margin-bottom: 16px;
         font-size: 18px;
-        font-family: 'Rubik', sans-serif;
     }
     &__list {
         padding-left: 15px;
         list-style-type: disc;
         color: var(--color-text2);
         font-size: 18px;
-        font-family: 'Rubik', sans-serif;
     }
     &__list-item {
         margin-bottom: 10px;
@@ -61,7 +59,6 @@
     &__text-title {
         font-size: 22.5px;
         font-weight: 700;
-        font-family: 'Rubik', sans-serif;
         margin-bottom: 10px;
     }
 

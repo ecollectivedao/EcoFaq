@@ -1,0 +1,23 @@
+.news2 {
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+        font-size: 42px;
+        color: var(--color-text);
+        font-weight: 700;
+        font-family: romana;
+        text-align: start;
+        flex: 1 0 40%;
+    }
+
+    &__content {
+        flex: 1 0 40%;
+        line-height: 1.5;
+    }
+
+    &__text {
+        color: var(--color-text2);
+        font-size: 18px;
+    }
+}

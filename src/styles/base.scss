@@ -2,8 +2,18 @@
     max-width: 1140px;
     padding: 0 20px;
     margin: 0 auto;
+
+    &__body {
+        max-width: 952px;
+        margin: 0 auto;
+    }
 }
 
 .main {
     padding-top: 60px;
+}
+
+section {
+    padding: 70px;
+    border-bottom: 1px solid rgba(146,79,53,0.05);
 }

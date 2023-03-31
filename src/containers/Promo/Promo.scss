@@ -1,0 +1,20 @@
+.promo {
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: start;
+    text-align: center;
+
+    &__title{
+        font-size: 75px;
+        transform: translateY(-50%);
+        z-index: -1;
+    }
+    &__subtitle {
+        z-index: -1;
+        font-size: 48px;
+        margin-top: 15px;
+        transform: translateY(-50%);
+    }
+}
