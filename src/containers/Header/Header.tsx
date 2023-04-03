@@ -14,7 +14,7 @@ export const Header = () => {
                     </div>
                         {/* <BurgerMenu/> */}
                         <DesktopMenu/>
-                    <button className='header__btn'>Sign in</button>
+                    <a className='header__btn'>Войти</a>
                 </div>
        </header>
     )

@@ -6,13 +6,16 @@
     line-height: 1.7;
     top: 20px;
     left: 0;
-    background: rgb(224, 222, 222);
+    background: var(--color-alter);
     padding: 0 20px;
     transition: 0.3s all ease;
+    backdrop-filter: blur(8px);
+ 
 
     &.opened {
         max-height: 400px;
         padding: 20px 20px;
+
     }
 
     &__link {

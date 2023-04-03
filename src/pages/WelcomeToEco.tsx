@@ -4,9 +4,9 @@ import {News, News2, NewsCenter} from 'containers'
 export const WelcomeToEco = () => {
     return (
         <MainLayout>
-                    <News/>
+                    {/* <News/> */}
                     <News2/>
-                    <NewsCenter/>
+                    {/* <NewsCenter/> */}
         </MainLayout>
     )
 }

@@ -5,9 +5,6 @@
     background: var(--color-alter);
     backdrop-filter: blur(8px);
 
-    // background: linear-gradient(90deg, #e1ded344 0%, #cfe5e058 46.35%, #fcef634d 100%);
-    // background-size: 200% 100%;
-
     &__container {
         height: 100%;
         display: flex;
@@ -15,8 +12,13 @@
         justify-content: space-between;
     }
     &__btn {
-        padding: 15px 30px;
-        border-radius: 20px;
-        border: 1px solid black;
+        padding: 10px 20px;
+        background: #27292e;
+        border: none;
+        color: #fffffb;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: rubik;
     }
 }

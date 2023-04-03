@@ -18,9 +18,11 @@
     }
     &__item {
         // width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 25%;
-        height: 100px;
-        height: 120px;
+        height: 80px;
         border-top: 1px solid var(--color-active);
         // transition: 0.3 ease all;
     }
@@ -29,8 +31,8 @@
     }
     &__link svg{
         object-fit: contain;
-        width: 100%;
-        height: 100%;
+        width: 70%;
+        height: 70%;
         transition: 0.3s ease all;
     }
 }
