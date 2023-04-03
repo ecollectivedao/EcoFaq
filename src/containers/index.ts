@@ -1,1 +1,8 @@
-export {Header} from 'containers/Header/Header'
+export {Header} from 'containers/Header/Header';
+export {Footer} from './Footer/Footer'
+export {Investors} from './Investors/Investors'
+export {BurgerMenu, DesktopMenu} from './Menu/Menu'
+export {News} from './News/News'
+export {News2} from './News_2/News_2'
+export {NewsCenter} from './NewsCenter/NewsCenter'
+export {Promo} from './Promo/Promo'

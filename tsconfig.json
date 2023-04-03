@@ -1,6 +1,4 @@
 {
-  // "baseUrl": "src",
-  // "rootDir": "src",
   "compilerOptions": {
     "baseUrl": "./src",
     "target": "es5",

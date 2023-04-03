@@ -1,13 +1,16 @@
 import { BurgerMenu, DesktopMenu } from 'containers/Menu/Menu'
 
 import './Header.scss'
+import { Link } from 'react-router-dom'
 
 export const Header = () => {
     return (
        <header className='header'>
             <div className="header__container container">
                     <div className="header__logo">
-                        <img src="" alt="logotype" />
+                        <Link to='/'>
+                            <img src="" alt="logotype" />
+                        </Link>
                     </div>
                         {/* <BurgerMenu/> */}
                         <DesktopMenu/>

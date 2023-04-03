@@ -1,23 +1,170 @@
 import { useState } from 'react'
+import {Link} from 'react-router-dom'
 
 import { Dropdown } from 'ui/Dropdown/Dropdown'
+import { Submenu } from 'ui/Submenu/Submenu'
 
 import './Menu.scss'
 
 export const DesktopMenu = () => {
 
+
     return (
         <ul className='menu__list'>
-            <li className="menu__list-item">
+            <Submenu name='Ru FAQ'>
+                <li className="submenu__item">
+                    <Link to='welcome' className="submenu__link">Welcome to ECO</Link>
+                </li>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">С чего начать?</a>
+                </li>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">Tokens</a>
+                </li>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">Claim токенов</a>
+                </li>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">Discord сервер</a>
+                </li>
+            </Submenu>
+
+            <Submenu name='Активные задания'>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">Welcome to ECO</a>
+                </li>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">С чего начать?</a>
+                </li>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">Tokens</a>
+                </li>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">Claim токенов</a>
+                </li>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">Discord сервер</a>
+                </li>
+            </Submenu>
+
+            <Submenu name='Governance'>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">Welcome to ECO</a>
+                </li>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">С чего начать?</a>
+                </li>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">Tokens</a>
+                </li>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">Claim токенов</a>
+                </li>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">Discord сервер</a>
+                </li>
+            </Submenu>
+
+            <Submenu name='Библиотека'>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">Welcome to ECO</a>
+                </li>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">С чего начать?</a>
+                </li>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">Tokens</a>
+                </li>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">Claim токенов</a>
+                </li>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">Discord сервер</a>
+                </li>
+            </Submenu>
+
+            <Submenu name='Продукты ECO'>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">Welcome to ECO</a>
+                </li>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">С чего начать?</a>
+                </li>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">Tokens</a>
+                </li>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">Claim токенов</a>
+                </li>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">Discord сервер</a>
+                </li>
+            </Submenu>
+
+            <Submenu name='Archive'>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">Welcome to ECO</a>
+                </li>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">С чего начать?</a>
+                </li>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">Tokens</a>
+                </li>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">Claim токенов</a>
+                </li>
+                <li className="submenu__item">
+                    <a href="#" className="submenu__link">Discord сервер</a>
+                </li>
+            </Submenu>
+            
+
+
+            {/* <li className="menu__list-item">
                 <a href="" className="menu__list-link">Ru FAQ</a>
             </li>
             <li className="menu__list-item">
             <a href="" className="menu__list-link">Активные задания</a>
             </li>
+            <li className="menu__list-item">
+            <a href="" className="menu__list-link">Governance</a>
+            </li>
+            <li className="menu__list-item">
+            <a href="" className="menu__list-link">Библиотека</a>
+            </li>
+            <li className="menu__list-item">
+            <a href="" className="menu__list-link">Продукты</a>
+            </li>
+            <li className="menu__list-item">
+            <a href="" className="menu__list-link">Archive</a>
+            </li> */}
+
+            {/* <li className="menu__list-item">
+                <p className="menu__list-item">Ru FAQ</p> 
+                <ul className="menu__list-dropdown dropdown">
+                    <li className="dropdown__item">
+                        <a href="#" className="dropdown__link">Welcome to ECO</a>
+                    </li>
+                    <li className="dropdown__item">
+                        <a href="#" className="dropdown__link">С чего начать?</a>
+                    </li>
+                    <li className="dropdown__item">
+                        <a href="#" className="dropdown__link">Tokens</a>
+                    </li>
+                    <li className="dropdown__item">
+                        <a href="#" className="dropdown__link">Claim токенов</a>
+                    </li>
+                    <li className="dropdown__item">
+                        <a href="#" className="dropdown__link">Discord сервер</a>
+                    </li>
+                </ul>
+            </li> */}
+            {/* <li className="menu__list-item">Активные задания</li>
             <li className="menu__list-item">Governance</li>
             <li className="menu__list-item">Библиотека</li>
             <li className="menu__list-item">Продукты СЕО</li>
-            <li className="menu__list-item">Archive</li>
+            <li className="menu__list-item">Archive</li> */}
         </ul>
     )
 }
@@ -82,7 +229,7 @@ export const BurgerMenu = () => {
 
                     <h3 className="burger-menu__title">Governance</h3>
                     <ul className="burger-menu__category">
-                    <li className="burger-menu__item">
+                        <li className="burger-menu__item">
                             <a href="" className="burger-menu__link">Управление сообществом</a>
                         </li>
                         <li className="burger-menu__item">
@@ -137,7 +284,7 @@ export const BurgerMenu = () => {
                     <h3 className="burger-menu__title">Archive</h3>
                     <ul className="burger-menu__category">
                         <li className="burger-menu__item">
-                        <Dropdown title='Полезные ссылки'>
+                            <Dropdown title='Полезные ссылки'>
                                 <li className="burger-menu__item">
                                     <a href="" className="burger-menu__link">Полезные ссылки</a>
                                 </li>
@@ -147,10 +294,10 @@ export const BurgerMenu = () => {
                                 <li className="burger-menu__item">
                                     <a href="" className="burger-menu__link">Whitepaper</a>
                                 </li>
-                        </Dropdown>
+                            </Dropdown>
                         </li>
                         <li className="burger-menu__item">
-                        <Dropdown title='Полезные ссылки'>
+                            <Dropdown title='Полезные ссылки'>
                                 <li className="burger-menu__item">
                                     <a href="" className="burger-menu__link">Полезные ссылки</a>
                                 </li>
@@ -160,10 +307,10 @@ export const BurgerMenu = () => {
                                 <li className="burger-menu__item">
                                     <a href="" className="burger-menu__link">Whitepaper</a>
                                 </li>
-                        </Dropdown>
+                            </Dropdown>
                         </li>
                         <li className="burger-menu__item">
-                        <Dropdown title='Полезные ссылки'>
+                            <Dropdown title='Полезные ссылки'>
                                 <li className="burger-menu__item">
                                     <a href="" className="burger-menu__link">Полезные ссылки</a>
                                 </li>
@@ -173,10 +320,10 @@ export const BurgerMenu = () => {
                                 <li className="burger-menu__item">
                                     <a href="" className="burger-menu__link">Whitepaper</a>
                                 </li>
-                        </Dropdown>
+                            </Dropdown>
                         </li>
                         <li className="burger-menu__item">
-                        <Dropdown title='Полезные ссылки'>
+                            <Dropdown title='Полезные ссылки'>
                                 <li className="burger-menu__item">
                                     <a href="" className="burger-menu__link">Полезные ссылки</a>
                                 </li>
@@ -186,10 +333,10 @@ export const BurgerMenu = () => {
                                 <li className="burger-menu__item">
                                     <a href="" className="burger-menu__link">Whitepaper</a>
                                 </li>
-                        </Dropdown>
+                            </Dropdown>
                         </li>
                         <li className="burger-menu__item">
-                        <Dropdown title='Полезные ссылки'>
+                            <Dropdown title='Полезные ссылки'>
                                 <li className="burger-menu__item">
                                     <a href="" className="burger-menu__link">Полезные ссылки</a>
                                 </li>
@@ -199,7 +346,7 @@ export const BurgerMenu = () => {
                                 <li className="burger-menu__item">
                                     <a href="" className="burger-menu__link">Whitepaper</a>
                                 </li>
-                        </Dropdown>
+                            </Dropdown>
                         </li>
                     </ul>
                 </div>

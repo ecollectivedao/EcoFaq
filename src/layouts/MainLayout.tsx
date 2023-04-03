@@ -3,23 +3,22 @@ import { News } from 'containers/News/News'
 import { News2 } from 'containers/News_2/News_2'
 import {Promo} from 'containers/Promo/Promo'
 import {NewsCenter} from 'containers/NewsCenter/NewsCenter'
+import {Footer} from 'containers/Footer/Footer'
 
 import image from 'assets/img/4.png'
+import { Investors } from 'containers/Investors/Investors'
 
-export const MainLayout = () => {
+export const MainLayout = ({children}: {children: React.ReactNode}) => {
     return (
         <>
             <Header/>
             
             <main className="main">
                 <div className="container__body">
-                    <Promo/>
-                    <img style={{width: '900px', marginTop: '50px'}} src={image} alt="" />
-                    {/* <News/>
-                    <News2/>
-                    <NewsCenter/> */}
+                  {children}
                 </div>
             </main>
+            <Footer/>
         </>
     )
 }
