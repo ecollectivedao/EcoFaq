@@ -1,0 +1,12 @@
+.logo {
+    width: 120px;
+    height: 25px;
+}
+
+.logo a svg path {
+    fill: var(--color-text);
+    transition: 0.3s ease all
+}
+.logo:hover a svg path {
+    fill: var(--color-active)
+}

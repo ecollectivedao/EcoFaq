@@ -29,39 +29,30 @@ export const DesktopMenu = () => {
                 </li>
             </Submenu>
 
-            <Submenu name='Активные задания'>
+            <Submenu name='Задания'>
                 <li className="submenu__item">
-                    <a href="#" className="submenu__link">Welcome to ECO</a>
+                    <a href="#" className="submenu__link">Активные задания</a>
                 </li>
                 <li className="submenu__item">
-                    <a href="#" className="submenu__link">С чего начать?</a>
-                </li>
-                <li className="submenu__item">
-                    <a href="#" className="submenu__link">Tokens</a>
-                </li>
-                <li className="submenu__item">
-                    <a href="#" className="submenu__link">Claim токенов</a>
-                </li>
-                <li className="submenu__item">
-                    <a href="#" className="submenu__link">Discord сервер</a>
+                    <a href="#" className="submenu__link">Архив</a>
                 </li>
             </Submenu>
 
             <Submenu name='Governance'>
                 <li className="submenu__item">
-                    <a href="#" className="submenu__link">Welcome to ECO</a>
+                    <a href="#" className="submenu__link">Управление сообществом</a>
                 </li>
                 <li className="submenu__item">
-                    <a href="#" className="submenu__link">С чего начать?</a>
+                    <a href="#" className="submenu__link">Предложения</a>
                 </li>
                 <li className="submenu__item">
-                    <a href="#" className="submenu__link">Tokens</a>
+                    <a href="#" className="submenu__link">Рабочие встречи</a>
                 </li>
                 <li className="submenu__item">
-                    <a href="#" className="submenu__link">Claim токенов</a>
+                    <a href="#" className="submenu__link">Trustee</a>
                 </li>
                 <li className="submenu__item">
-                    <a href="#" className="submenu__link">Discord сервер</a>
+                    <a href="#" className="submenu__link">Monetary Policy</a>
                 </li>
             </Submenu>
 

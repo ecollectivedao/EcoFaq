@@ -1,5 +1,5 @@
 import { MainLayout } from "layouts/MainLayout"
-import {News, News2, NewsCenter} from 'containers'
+import {News2} from 'containers'
 
 export const WelcomeToEco = () => {
     return (
