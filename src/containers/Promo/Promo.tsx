@@ -1,3 +1,5 @@
+import Typed from 'react-typed'
+
 import './Promo.scss'
 
 export const Promo = () => {
@@ -7,7 +9,21 @@ export const Promo = () => {
                 Eco - это не банк
             </h1>
             <h2 className="promo__subtitle">
-                Eco - это один простой баланс, который позволяет вам тратить, отправлять, сохранять и зарабатывать деньги.
+                Eco - это один простой баланс, который позволяет вам   
+                
+                <span className='promo__typing'>
+                <Typed
+                     strings={['тратить',
+                                'отправлять',
+                                'сохранять', 
+                            'зарабатывать']}
+                     typeSpeed={100}
+                     backSpeed={50}
+                     startDelay={500}
+                     loop
+                />
+                </span>
+                деньги.
             </h2>
             <p className="promo__descr">
                 На данном сайте вы узнаете всю основную информацию по проекту ЕСО, актуальные задания, перевод важных документов и т.д <br />

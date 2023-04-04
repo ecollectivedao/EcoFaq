@@ -7,22 +7,53 @@
     align-self: start;
     text-align: center;
 
-    &__title{
+    &__title {
         font-size: 34px;
         font-weight: 600;
-
+        animation: reveal ease-out 1s;
+        opacity: 0;
         z-index: -1;
+        animation-fill-mode: forwards;
     }
+
     &__subtitle {
         z-index: -1;
         font-size: 46px;
         margin-top: 15px;
         font-weight: 600;
+        animation: reveal ease 1s 0.15s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+
 
     }
-    &__descr{
+
+    &__descr {
         margin-top: 30px;
         font-size: 14px;
         line-height: 1.5;
+        animation: reveal ease 1s 0.3s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
+
+    &__typing {
+        margin-left: 1%;
+        margin-right: 1%;
+        color: #e0de87;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        transform: scale(1.4);
+        // transform: translateX(-30vw);
+        opacity: 0
+    }
+
+    100% {
+        transform: scale(1);
+        // transform: translateX(0);
+        opacity: 1
     }
 }
