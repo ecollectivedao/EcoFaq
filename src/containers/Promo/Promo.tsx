@@ -17,9 +17,9 @@ export const Promo = () => {
                                 'отправлять',
                                 'сохранять', 
                             'зарабатывать']}
-                     typeSpeed={100}
-                     backSpeed={50}
-                     startDelay={500}
+                     typeSpeed={150}
+                     backSpeed={100}
+                     startDelay={1500}
                      loop
                 />
                 </span>
