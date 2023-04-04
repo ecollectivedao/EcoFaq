@@ -13,7 +13,7 @@
         margin-top: 40px;
         display: flex;
         flex-wrap: wrap;
-        border-bottom: 1px solid var(--color-active);
+        border-bottom: 1px solid var(--color-decor);
 
     }
     &__item {
@@ -23,11 +23,20 @@
         align-items: center;
         width: 25%;
         height: 80px;
-        border-top: 1px solid var(--color-active);
-        // transition: 0.3 ease all;
+        border-top: 1px solid var(--color-decor);
     }
     &__item:hover .investors__link svg {
         transform: scale(1.18);
+    }
+    &__link {
+        transition: all 0.4s ease-out;
+        transform: translateY(80%);
+        opacity: 0;
+    }
+    &__link.visible{
+        transform: translateY(0);
+        opacity: 1;
+        // animation: all 0.4s ease-out;
     }
     &__link svg{
         object-fit: contain;
