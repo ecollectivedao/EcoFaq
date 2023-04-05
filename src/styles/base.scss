@@ -1,9 +1,9 @@
 body {
-    // background: #fffffb;
+    background: #fffffb;
     // background: linear-gradient(-45deg, #EE7752, #e6d85d, #23A6D5, #23D5AB) ; 
     background: linear-gradient(-45deg, #dfdd86, #d5e7d7, #fffffb) ; 
     background-size: 400% 400%; 
-    animation: change 11s ease-in-out infinite;
+    animation: change 10s ease-in-out infinite;
 }
 
 .container {
@@ -31,6 +31,7 @@ section {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
 }
 
 
