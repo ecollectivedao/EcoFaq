@@ -10,7 +10,7 @@ import { Investors } from 'containers/Investors/Investors'
 
 export const MainLayout = ({children}: {children: React.ReactNode}) => {
     return (
-        <>
+        <div className='wrapper__gradient'>
             <Header/>
             
             <main className="main">
@@ -19,6 +19,6 @@ export const MainLayout = ({children}: {children: React.ReactNode}) => {
                 </div>
             </main>
             <Footer/>
-        </>
+        </div>
     )
 }

@@ -1,12 +1,13 @@
-import { MainLayout } from "layouts/MainLayout"
-import {News2} from 'containers'
+import { SecondaryLayout } from "layouts/SecondaryLayout"
+import {News2, News, NewsCenter} from 'containers'
+
 
 export const WelcomeToEco = () => {
     return (
-        <MainLayout>
-                    {/* <News/> */}
-                    <News2/>
-                    {/* <NewsCenter/> */}
-        </MainLayout>
+        <SecondaryLayout>
+                    <News/>
+                    {/* <News2/>
+                    <NewsCenter/> */}
+        </SecondaryLayout>
     )
 }
