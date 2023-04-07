@@ -14,7 +14,7 @@ export const Submenu = ({name, children}: SubmenuProps) => {
     return (
         <li className="menu__list-item"
         onClick={() => setIsOpen(state => !state)}>
-                <p className="menu__list-item">{name}</p> 
+                <p className={`menu__list-item ${isOpen ? 'active' : ''}`}>{name}</p> 
                 <ul className={isActive}>
                     {children}
                     {/* <li className="submenu__item">

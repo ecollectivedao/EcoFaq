@@ -1,0 +1,7 @@
+export {Discord} from 'pages/Discord'
+export {MainPage} from 'pages/MainPage'
+export {Tokens} from 'pages/Tokens'
+export {TokensClaim} from 'pages/TokensClaim'
+export {WelcomeToEco} from 'pages/WelcomeToEco'
+export {WhereToBegin} from 'pages/WhereToBegin'
+// export {Discord} from 'pages/Discord'
