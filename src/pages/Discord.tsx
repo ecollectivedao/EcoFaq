@@ -1,6 +1,9 @@
 import { SecondaryLayout } from "layouts/SecondaryLayout"
 import {News2, News, NewsCenter} from 'containers'
 
+import coins from 'assets/img/coins.png'
+
+
 
 export const Discord = () => {
     return (
@@ -9,11 +12,10 @@ export const Discord = () => {
                 <div className="news__container">
                     <div className="news__block">
                         <div className="news__image">
-                            <img src='' alt="news image" />
+                            <img src={coins} alt="news image" />
                         </div>
                         <div className="news__info">
                             <h2 className="news__title">
-                                {/* Welcome to ECO */}
                                 Discord cервер
                             </h2>
                             <p className="news__subtitle">Краткое описание каналов в Дискорд</p>

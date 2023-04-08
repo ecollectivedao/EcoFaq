@@ -10,13 +10,18 @@ export const Tokens = () => {
     return (
         <SecondaryLayout>
             <section className="news-center">
-                <h2 className="news-center__title">
+            <h2 className="news__title">
+                                {/* Welcome to ECO */}
+                                Get started
+                            </h2>
+                            <p className="news__subtitle">С чего начать?</p>
+                {/* <h2 className="news-center__title">
                     Токены
                 </h2>
 
                 <p className="news__descr">
                     В системе Eco Currency существует два токена
-                </p>
+                </p> */}
                 <ul className='news-center__list'>
                     <li className="news-center__list-item">
                         <img className='news-center__image' src={eco} alt="eco" />

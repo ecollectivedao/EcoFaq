@@ -9,10 +9,11 @@
         display: flex;
         gap: 25px;
         justify-content: center;
+        // align-items: center;
     }
     &__image {
         margin-bottom: 20px;
-        height: 500px;
+        height: 600px;
         // height: 100%;
         width: 40%;
         position: relative;
@@ -83,6 +84,15 @@
         list-style-type: auto;
         color: var(--color-text2);
         font-size: 18px;
+        margin-top: 20px;
     }
 
+}
+
+.section__wrapper {
+    display: flex;
+}
+
+.block1 {
+    flex: 0 0 20%;
 }

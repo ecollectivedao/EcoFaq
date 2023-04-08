@@ -8,13 +8,17 @@ export const TokensClaim = () => {
     return (
         <SecondaryLayout>
             <section className="news-center">
-                <h2 className="news-center__title">
-                    Claim токенов
-                </h2>
-
-                <h3 className="text__subtitle">
-                    В этом разделе описано как заклеймить свои токены
-                </h3>
+            <h2 className="news__title">
+                                Claim токенов
+                            </h2>
+                            <p className="news__subtitle">Как заклеймить свои токены?</p>
+                <div className="section__wrapper">
+                    <div className="block1">
+                        <h3 className="text__subtitle">
+                            Инструкция
+                        </h3>
+                    </div>
+                    <div className="block2">
 
                 <ol className="news__list-number">
                     <li className="news__list-item">
@@ -43,6 +47,9 @@ export const TokensClaim = () => {
                 <p className="news__descr">
                     Первый клейм нужно сделать до 28.10.2023. Если на экране у вас возникает ошибка: "If you're seeing this message..." - используйте VPN. Если у вас возникают проблемы с клеймом - напишите в канал ⛑eco-support.
                 </p>
+                    </div>
+                </div>
+          
             </section>
         </SecondaryLayout>
     )

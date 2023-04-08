@@ -19,7 +19,7 @@ export const WhereToBegin = () => {
                                 Get started
                             </h2>
                             <p className="news__subtitle">С чего начать?</p>
-                            <h3 className="news__text-title">Как учавствовать?</h3>
+                            {/* <h3 className="news__text-title">Как учавствовать?</h3> */}
 
                             <ol className="news__list-number">
                                 <li className="news__list-item">Для начала нам необходимо присоединиться к
