@@ -1,0 +1,16 @@
+.ama__list {
+    margin-top: 30px;
+}
+
+.ama-item{
+    &__title {
+        font-weight: 500;
+    }
+    &__date {
+        margin-top: 15px;
+    }
+}
+
+.ama-item + .ama-item {
+    margin-top: 30px;
+}

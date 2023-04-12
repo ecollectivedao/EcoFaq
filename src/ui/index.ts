@@ -1,3 +1,6 @@
 export {Logo} from './Logo/Logo'
 export {Submenu} from './Submenu/Submenu'
 export {Dropdown} from './Dropdown/Dropdown'
+export {Portal} from 'ui/Portal/Portal'
+export {Modal} from './Modal/Modal'
+export {Backdrop} from './Backdrop/Backdrop'

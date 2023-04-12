@@ -1,16 +1,18 @@
-import { initializeApp } from 'firebase/app';
-import { getAuth } from "firebase/auth";
 
-// TODO: Replace the following with your app's Firebase project configuration
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import {getFirestore} from 'firebase/firestore'
+
 const firebaseConfig = {
-    apiKey: "AIzaSyA-sBqm2dfUfDYlYPvV82zla4XL2ZZRwwo",
-    authDomain: "ceocash-c1392.firebaseapp.com",
-    projectId: "ceocash-c1392",
-    storageBucket: "ceocash-c1392.appspot.com",
-    messagingSenderId: "189087352070",
-    appId: "1:189087352070:web:082682ec3ff4569226ca87",
-    measurementId: "G-6XFD6CTFH7"
+  apiKey: "AIzaSyCvfY0HX0lhiAS9kY_2Erz8bhHNo2gg0mY",
+  authDomain: "eco-project-f664a.firebaseapp.com",
+  projectId: "eco-project-f664a",
+  storageBucket: "eco-project-f664a.appspot.com",
+  messagingSenderId: "964078510716",
+  appId: "1:964078510716:web:7ff1a4ea2e2edc39bd5ff9",
+  measurementId: "G-H2LY4ZPZGK"
 };
 
+// Initialize Firebase
 export const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
+export const db = getFirestore(app);

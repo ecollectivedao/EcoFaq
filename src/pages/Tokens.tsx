@@ -1,5 +1,4 @@
 import { SecondaryLayout } from "layouts/SecondaryLayout"
-import { News2, News, NewsCenter } from 'containers'
 
 import formule from 'assets/img/formule.png'
 import eco from 'assets/img/ECO.png'
@@ -9,75 +8,55 @@ import ecoX from 'assets/img/ECOx.png'
 export const Tokens = () => {
     return (
         <SecondaryLayout>
-            <section className="news-center">
-            <h2 className="news__title">
-                                {/* Welcome to ECO */}
-                                Get started
-                            </h2>
-                            <p className="news__subtitle">С чего начать?</p>
-                {/* <h2 className="news-center__title">
-                    Токены
+
+            <section className="block-primary">
+                <h2 className="block-primary__title">
+                    Tokens
                 </h2>
-
-                <p className="news__descr">
+                <p className="block-primary__subtitle">Какие есть токены?</p>
+                <h3 className="block-primary__big">
                     В системе Eco Currency существует два токена
-                </p> */}
-                <ul className='news-center__list'>
-                    <li className="news-center__list-item">
-                        <img className='news-center__image' src={eco} alt="eco" />
-                        <span className="news-center__strong">ECO</span>
-                        Базовая валюта для расходов и сбережений, предложение которой регулируется денежно-кредитной политикой. Первоначальный саплай 10 миллиардов ECO. На этой ранней стадии исследований, ECO - это то, с чем можно играть, и постепенно платить. При хорошем управления и растущего внедрения, ECO в конечном итоге может стать валютой для сбережений.
-                    </li>
+                </h3>
 
-                    <li className="news-center__list-item">
-                        <img className="news-center__image" src={ecoX} alt="ecoX" />
-                        <span className="news-center__strong">ECOx</span>
-                        Вторичный актив для обеспечения надежного управления и поддержки ответственного роста. Он имеет ограниченное предложение, которое может только уменьшаться со временем. Общий саплай 1 миллиард ECOx. Каждая единица ECOx может быть конвертироваться в ЭКО в любое время по защищенному от инфляции курсу (т.е. каждая единица ECOx представляет собой процент от предложения ECO), и в конечном итоге ECOx может получать выгоду от комиссионных за транзакции в ECO. ECOx может быть конвертироваться в ECO только при одностороннем, необратимом обмене.
+                <ul className="block-primary__gallery">
+                    <li className="block-primary__gallery-item">
+                        <div className="block-primary__gallery-visual">
+                            <img src={eco} alt="" className="block-primary__gallery-image" />
+                        </div>
+                        <p className="block-primary__text"><strong>ECO</strong></p>
+                        <p className="block-primary__text">Базовая валюта для расходов и сбережений, предложение которой регулируется денежно-кредитной политикой. Первоначальный саплай 10 миллиардов ECO. На этой ранней стадии исследований, ECO - это то, с чем можно играть, и постепенно платить. При хорошем управления и растущего внедрения, ECO в конечном итоге может стать валютой для сбережений.</p>
+                    </li>
+                    <li className="block-primary__gallery-item">
+                        <div className="block-primary__gallery-visual">
+                            <img src={ecoX} alt="" className="block-primary__gallery-image" />
+                        </div>
+                        <p className="block-primary__text"><strong>ECOx</strong></p>
+                        <p className="block-primary__text">Вторичный актив для обеспечения надежного управления и поддержки ответственного роста. Он имеет ограниченное предложение, которое может только уменьшаться со временем. Общий саплай 1 миллиард ECOx. Каждая единица ECOx может быть конвертироваться в ЭКО в любое время по защищенному от инфляции курсу (т.е. каждая единица ECOx представляет собой процент от предложения ECO), и в конечном итоге ECOx может получать выгоду от комиссионных за транзакции в ECO. ECOx может быть конвертироваться в ECO только при одностороннем, необратимом обмене.</p>
                     </li>
                 </ul>
 
-                <h3 className="text__subtitle">
-                    Формула для преобразования ECOx в ECO
-                </h3>
-                <img className="news-center__formule" src={formule} alt="formule" />
-                <div className="news-center__formule-descr">
-                    <p className="news__descr">
-                        am = ЭКО отчеканен и возвращен конвертирующей стороне <br />
-                        αc = Общее текущее оборотное предложение ЭКО <br />
-                        βc = ECOx, конвертируемая конвертирующей стороной <br />
-                        βi = Первоначальное количество ECOx при лаунче <br />
-                    </p>
+                <h3 className="block-primary__big">Формула для преобразования ECOx в ECO:</h3>
+                <img src={formule} alt="formule" className="block-primary__img-sm" />
+                <p className="block-primary__text">
+                    <strong>am</strong> = ЭКО отчеканен и возвращен конвертирующей стороне
+                </p>
+                <p className="block-primary__text">
+                    <strong>αc</strong> = Общее текущее оборотное предложение ЭКО
+                </p>
+                <p className="block-primary__text">
+                    <strong>βc</strong> = ECOx, конвертируемая конвертирующей стороной
+                </p>
+                <p className="block-primary__text">
+                    <strong>βi</strong> = Первоначальное количество ECOx при лаунче
+                </p>
+                <h3 className="block-primary__big">Доступные Биржи</h3>
+                <a href='https://www.kucoin.com/' target='_blank' className="block-primary__link">Kucoin</a><br />
 
-                    <h3 className="text__subtitle">Доступные Биржи</h3>
-                    <ul className="news-center__list-sec">
-                        <li className="news-center__list-item-sec">
-                            Kucoin https://www.kucoin.com/
-                        </li>
-                        <li className="news-center__list-item-sec">
-                            Gate.io https://www.gate.io/
-                        </li>
-                        <li className="news-center__list-item-sec">
-                            Bybit https://www.bybit.com/
-                        </li>
-                    </ul>
+                <a href='https://www.gate.io/' target='_blank' className="block-primary__link">Gate.io </a><br />
 
-
-                    <h3 className="text__subtitle">
-                    Адресса контрактов
-                </h3>
-                <ul className='news-center__list-sec'>
-                    <li className="news-center__list-item-sec">
-                        ECO - 0x8dBF9A4c99580fC7Fd4024ee08f3994420035727
-                    </li>
-                    <li className="news-center__list-item-sec">
-                        ECOx - 0xcccD1Ba9f7acD6117834E0D28F25645dECb1736a
-                    </li>
-                </ul>
-
-                </div>
-
-
+                <a href='https://www.bybit.com/' target='_blank' className="block-primary__link">Bybit</a><br />
             </section>
+
         </SecondaryLayout>
     )
 }
