@@ -1,0 +1,42 @@
+.trustee__item {
+    width: 200px;
+    text-align: center;
+}
+
+.trustee__avatar {
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.3s ease all;
+    cursor: pointer;
+    border: 2px solid var(--color-text2);
+    margin-bottom: 15px;
+}
+
+.trustee__avatar:hover{
+    transform: scale(1.1);
+}
+.trustee__item img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+
+.trustee__name  {
+    font-family: rubik;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.trustee__link {
+    color: var(--color-active);
+    margin-top: 10px;
+    font-size: 16px;
+    display: block;
+}
+
+.trustee__discord{ 
+    margin-left: 5px;
+    font-weight: 400;
+}

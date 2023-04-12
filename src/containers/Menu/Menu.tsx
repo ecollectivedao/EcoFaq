@@ -27,6 +27,9 @@ export const DesktopMenu = () => {
                 <li className="submenu__item">
                     <Link to="/discord" className="submenu__link">Discord сервер</Link>
                 </li>
+                <li className="submenu__item">
+                    <Link to="/discord-roles" className="submenu__link">Описание ролей в Discord</Link>
+                </li>
             </Submenu>
 
             <Submenu name='Задания'>
@@ -40,73 +43,61 @@ export const DesktopMenu = () => {
 
             <Submenu name='Governance'>
                 <li className="submenu__item">
-                    <Link to="#" className="submenu__link">Управление сообществом</Link>
+                    <Link to="/community-managment" className="submenu__link">Управление сообществом</Link>
                 </li>
                 <li className="submenu__item">
-                    <Link to="#" className="submenu__link">Предложения</Link>
+                    <Link to="/offers-and-votes" className="submenu__link">Подача редложений и голосование</Link>
                 </li>
                 <li className="submenu__item">
-                    <Link to="#" className="submenu__link">Рабочие встречи</Link>
+                    <Link to="/accepted-offers" className="submenu__link">Принятые предложения</Link>
                 </li>
                 <li className="submenu__item">
-                    <Link to="#" className="submenu__link">Trustee</Link>
+                    <Link to="/work-meets" className="submenu__link">Рабочие встречи</Link>
                 </li>
                 <li className="submenu__item">
-                    <Link to="#" className="submenu__link">Monetary Policy</Link>
+                    <Link to="/trustee" className="submenu__link">Trustee</Link>
+                </li>
+                <li className="submenu__item">
+                    <Link to="/monetary-policy" className="submenu__link">Monetary Policy</Link>
                 </li>
             </Submenu>
 
             <Submenu name='Библиотека'>
                 <li className="submenu__item">
-                    <Link to="#" className="submenu__link">Welcome to ECO</Link>
+                    <Link to="/useful-links" className="submenu__link">Полезные ссылки</Link>
                 </li>
                 <li className="submenu__item">
-                    <Link to="#" className="submenu__link">С чего начать?</Link>
+                    <Link to="/whitepaper" className="submenu__link">Whitepaper</Link>
                 </li>
                 <li className="submenu__item">
-                    <Link to="#" className="submenu__link">Tokens</Link>
-                </li>
-                <li className="submenu__item">
-                    <Link to="#" className="submenu__link">Claim токенов</Link>
-                </li>
-                <li className="submenu__item">
-                    <Link to="#" className="submenu__link">Discord сервер</Link>
+                    <Link to="/AMA-records" className="submenu__link">Записи АМА</Link>
                 </li>
             </Submenu>
 
             <Submenu name='Продукты ECO'>
                 <li className="submenu__item">
-                    <Link to="#" className="submenu__link">Welcome to ECO</Link>
+                    <Link to="/eco-app" className="submenu__link">ECO app</Link>
                 </li>
                 <li className="submenu__item">
-                    <Link to="#" className="submenu__link">С чего начать?</Link>
-                </li>
-                <li className="submenu__item">
-                    <Link to="#" className="submenu__link">Tokens</Link>
-                </li>
-                <li className="submenu__item">
-                    <Link to="#" className="submenu__link">Claim токенов</Link>
-                </li>
-                <li className="submenu__item">
-                    <Link to="#" className="submenu__link">Discord сервер</Link>
+                    <Link to="/eco-debit-card" className="submenu__link">ECO debit card</Link>
                 </li>
             </Submenu>
 
             <Submenu name='Archive'>
                 <li className="submenu__item">
-                    <Link to="#" className="submenu__link">Welcome to ECO</Link>
+                    <Link to="#" className="submenu__link">RU</Link>
                 </li>
                 <li className="submenu__item">
-                    <Link to="#" className="submenu__link">С чего начать?</Link>
+                    <Link to="#" className="submenu__link">EN</Link>
                 </li>
                 <li className="submenu__item">
-                    <Link to="#" className="submenu__link">Tokens</Link>
+                    <Link to="#" className="submenu__link">FR</Link>
                 </li>
                 <li className="submenu__item">
-                    <Link to="#" className="submenu__link">Claim токенов</Link>
+                    <Link to="#" className="submenu__link">KR</Link>
                 </li>
                 <li className="submenu__item">
-                    <Link to="#" className="submenu__link">Discord сервер</Link>
+                    <Link to="#" className="submenu__link">JP</Link>
                 </li>
             </Submenu>
             
