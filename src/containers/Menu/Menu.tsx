@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import {Link} from 'react-router-dom'
 
 import { Dropdown } from 'ui/Dropdown/Dropdown'
@@ -7,6 +7,7 @@ import { Submenu } from 'ui/Submenu/Submenu'
 import './Menu.scss'
 
 export const DesktopMenu = () => {
+
 
 
     return (
@@ -34,10 +35,10 @@ export const DesktopMenu = () => {
 
             <Submenu name='Задания'>
                 <li className="submenu__item">
-                    <Link to="#" className="submenu__link">Активные задания</Link>
+                    <Link to="/quests-active" className="submenu__link">Активные задания</Link>
                 </li>
                 <li className="submenu__item">
-                    <Link to="#" className="submenu__link">Архив</Link>
+                    <Link to="/quests-archive" className="submenu__link">Архив</Link>
                 </li>
             </Submenu>
 

@@ -1,4 +1,4 @@
-import { MainPage, Discord, Tokens, TokensClaim, WelcomeToEco, WhereToBegin, DiscordRoles, CommunityManagment, AcceptedOffers, MonetaryPolicy, OffersAndVotes, Trustee, WorkMeets, AmaRecords, UsefulLinks, Whitepaper, EcoApp, EcoDebitCard } from 'pages'
+import { MainPage, Discord, Tokens, TokensClaim, WelcomeToEco, WhereToBegin, DiscordRoles, CommunityManagment, AcceptedOffers, MonetaryPolicy, OffersAndVotes, Trustee, WorkMeets, AmaRecords, UsefulLinks, Whitepaper, EcoApp, EcoDebitCard, QuestsArchive, ActiveQuests } from 'pages'
 
 import { Route, Routes } from 'react-router-dom'
 
@@ -23,7 +23,8 @@ export const Routings = () => {
             <Route path='/whitepaper' element={<Whitepaper/>}/>
             <Route path='/Eco-app' element={<EcoApp/>}/>
             <Route path='/Eco-debit-card' element={<EcoDebitCard/>}/>
-
+            <Route path='/quests-active' element={<ActiveQuests/>}/>
+            <Route path='/quests-archive' element={<QuestsArchive/>}/>
         </Routes>
 
     )
