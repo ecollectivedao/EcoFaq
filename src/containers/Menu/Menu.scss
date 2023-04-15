@@ -1,6 +1,7 @@
 .burger-menu {
     position: relative;
     z-index: 20;
+    order: 2;
 
     &__list {
         width: 100vw;
@@ -9,7 +10,7 @@
         padding-top: 40px;
         position: absolute;
         top: -10px;
-        left: 30vw;
+        left: 40vw;
         background: #ececec;
         pointer-events: auto;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -22,10 +23,10 @@
     &__list.active {
         transform: translateX(calc(-30vw - 400px));
         @media (max-width: 550px) {
-            transform: translateX(calc(-30vw - 280px));
+            transform: translateX(calc(-30vw - 330px));
         }
         @media (max-width: 410px) {
-            transform: translateX(calc(-30vw - 180px));
+            transform: translateX(calc(-30vw - 250px));
         }
     }
     &__list.active body {

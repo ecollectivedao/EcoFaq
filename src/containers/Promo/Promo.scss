@@ -8,17 +8,17 @@
     text-align: center;
 
     &__title {
-        font-size: 34px;
+        // font-size: 34px;
+        font-size: calc(20px + 10 * (100vw / 1440));
         font-weight: 600;
         animation: reveal ease-out 1s;
         opacity: 0;
-        // z-index: -1;
         animation-fill-mode: forwards;
     }
 
     &__subtitle {
-        // z-index: -1;
-        font-size: 46px;
+        // font-size: 46px;
+        font-size: calc(25px + 25 * (100vw / 1440));
         margin-top: 15px;
         font-weight: 600;
         animation: reveal ease 1s 0.15s;

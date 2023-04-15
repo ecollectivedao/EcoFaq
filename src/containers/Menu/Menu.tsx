@@ -1,14 +1,59 @@
 import { useState, useEffect, useRef } from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import { Dropdown } from 'ui/Dropdown/Dropdown'
 import { Submenu } from 'ui/Submenu/Submenu'
 
 import './Menu.scss'
 
-export const DesktopMenu = () => {
 
 
+
+
+
+
+export const Menu = () => {
+    const [desktopMenu, setDesktopMenu] = useState(true)
+
+    const getWindowSize = () => {
+        console.log(window.innerWidth)
+        if (window.innerWidth < 873) {
+            setDesktopMenu(false)
+        } else {
+            setDesktopMenu(true)
+        }
+    }
+
+    useEffect(() => {
+        getWindowSize()
+    }, []);
+
+    useEffect(() => {
+        window.addEventListener('resize', getWindowSize);
+
+        return () => {
+            window.removeEventListener('resize', getWindowSize);
+        };
+    }, [desktopMenu]);
+
+
+    // useEffect(() => {
+    //     console.log(window.innerWidth)
+    //     if (window.innerWidth < 873) {
+    //         setDesktopMenu(false)
+    //     }
+    // }, [window.innerWidth])
+
+    const view = desktopMenu ? <DesktopMenu /> : <BurgerMenu />
+
+    return (
+        <>
+            {view}
+        </>
+    )
+}
+
+const DesktopMenu = () => {
 
     return (
         <ul className='menu__list'>
@@ -101,7 +146,7 @@ export const DesktopMenu = () => {
                     <Link to="#" className="submenu__link">JP</Link>
                 </li>
             </Submenu>
-            
+
 
 
             {/* <li className="menu__list-item">
@@ -143,16 +188,11 @@ export const DesktopMenu = () => {
                     </li>
                 </ul>
             </li> */}
-            {/* <li className="menu__list-item">Активные задания</li>
-            <li className="menu__list-item">Governance</li>
-            <li className="menu__list-item">Библиотека</li>
-            <li className="menu__list-item">Продукты СЕО</li>
-            <li className="menu__list-item">Archive</li> */}
         </ul>
     )
 }
 
-export const BurgerMenu = () => {
+const BurgerMenu = () => {
     const [menuActive, setMenuActive] = useState(false)
 
     return (
@@ -213,7 +253,7 @@ export const BurgerMenu = () => {
                     <h3 className="burger-menu__title">Governance</h3>
                     <ul className="burger-menu__category">
                         <li className="burger-menu__item">
-                            <Link to="" className="burger-menu__link">Управление сообществом</Link>
+                            <Link to="" className="burger-menu__link">Сообщество</Link>
                         </li>
                         <li className="burger-menu__item">
                             <Dropdown title='Задания'>

@@ -1,4 +1,4 @@
-import { DesktopMenu } from 'containers/Menu/Menu'
+import { Menu } from 'containers/Menu/Menu'
 import {Logo} from 'ui'
 
 import './Header.scss'
@@ -9,7 +9,7 @@ export const Header = () => {
             <div className="header__container container">
                         <Logo/>
                         {/* <BurgerMenu/> */}
-                        <DesktopMenu/>
+                        <Menu/>
                     <a className='header__btn'>Войти</a>
                 </div>
        </header>
