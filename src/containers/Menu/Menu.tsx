@@ -6,12 +6,6 @@ import { Submenu } from 'ui/Submenu/Submenu'
 
 import './Menu.scss'
 
-
-
-
-
-
-
 export const Menu = () => {
     const [desktopMenu, setDesktopMenu] = useState(true)
 
@@ -35,14 +29,6 @@ export const Menu = () => {
             window.removeEventListener('resize', getWindowSize);
         };
     }, [desktopMenu]);
-
-
-    // useEffect(() => {
-    //     console.log(window.innerWidth)
-    //     if (window.innerWidth < 873) {
-    //         setDesktopMenu(false)
-    //     }
-    // }, [window.innerWidth])
 
     const view = desktopMenu ? <DesktopMenu /> : <BurgerMenu />
 
@@ -213,24 +199,24 @@ const BurgerMenu = () => {
                     <h3 className="burger-menu__title">Ru faq</h3>
                     <ul className="burger-menu__category">
                         <li className="burger-menu__item">
-                            <Link to="" className="burger-menu__link">Welcome to ECO</Link>
+                            <Link to="/welcome" className="burger-menu__link">Welcome to ECO</Link>
                         </li>
                         <li className="burger-menu__item">
-                            <Link to="" className="burger-menu__link">С чего начать</Link>
+                            <Link to="/where-to-begin" className="burger-menu__link">С чего начать</Link>
                         </li>
                         <li className="burger-menu__item">
-                            <Link to="" className="burger-menu__link">Tokens</Link>
+                            <Link to="/tokens" className="burger-menu__link">Tokens</Link>
                         </li>
                         <li className="burger-menu__item">
-                            <Link to="" className="burger-menu__link">Claim токенов</Link>
+                            <Link to="/tokens-claim" className="burger-menu__link">Claim токенов</Link>
                         </li>
                         <li className="burger-menu__item">
                             <Dropdown title='О дискорд сервере'>
                                 <li className="burger-menu__item">
-                                    <Link to="" className="burger-menu__link">Дискорд сервер</Link>
+                                    <Link to="/discord" className="burger-menu__link">Дискорд сервер</Link>
                                 </li>
                                 <li className="burger-menu__item">
-                                    <Link to="" className="burger-menu__link">Описание ролей в дискорд</Link>
+                                    <Link to="/discord-roles" className="burger-menu__link">Описание ролей в дискорд</Link>
                                 </li>
                             </Dropdown>
                         </li>
@@ -241,10 +227,10 @@ const BurgerMenu = () => {
                         <li className="burger-menu__item">
                             <Dropdown title='Задания'>
                                 <li className="burger-menu__item">
-                                    <Link to="" className="burger-menu__link">Активные задания</Link>
+                                    <Link to="/quests-active" className="burger-menu__link">Активные задания</Link>
                                 </li>
                                 <li className="burger-menu__item">
-                                    <Link to="" className="burger-menu__link">Архив заданий</Link>
+                                    <Link to="/quests-archive" className="burger-menu__link">Архив заданий</Link>
                                 </li>
                             </Dropdown>
                         </li>
@@ -253,26 +239,26 @@ const BurgerMenu = () => {
                     <h3 className="burger-menu__title">Governance</h3>
                     <ul className="burger-menu__category">
                         <li className="burger-menu__item">
-                            <Link to="" className="burger-menu__link">Сообщество</Link>
+                            <Link to="/community-managment" className="burger-menu__link">Сообщество</Link>
                         </li>
                         <li className="burger-menu__item">
-                            <Dropdown title='Задания'>
-                                <li className="burger-menu__item">
-                                    <Link to="" className="burger-menu__link">Активные задания</Link>
+                            <Dropdown title='Предложения и голосование'>
+                             <li className="burger-menu__item">
+                                    <Link to="/offers-and-votes" className="burger-menu__link">Подача предложений и голосование</Link>
                                 </li>
                                 <li className="burger-menu__item">
-                                    <Link to="" className="burger-menu__link">Архив заданий</Link>
+                                    <Link to="/accepted-offers" className="burger-menu__link">Принятые предложения</Link>
                                 </li>
                             </Dropdown>
                         </li>
                         <li className="burger-menu__item">
-                            <Link to="" className="burger-menu__link">Рабочие встречи</Link>
+                            <Link to="/work-meets" className="burger-menu__link">Рабочие встречи</Link>
                         </li>
                         <li className="burger-menu__item">
-                            <Link to="" className="burger-menu__link">Trustee</Link>
+                            <Link to="/trustee" className="burger-menu__link">Trustee</Link>
                         </li>
                         <li className="burger-menu__item">
-                            <Link to="" className="burger-menu__link">Monetary Policy</Link>
+                            <Link to="/monetary-policy" className="burger-menu__link">Monetary Policy</Link>
                         </li>
                     </ul>
 
@@ -281,15 +267,15 @@ const BurgerMenu = () => {
                         <li className="burger-menu__item">
                             <Dropdown title='Полезные ссылки'>
                                 <li className="burger-menu__item">
-                                    <Link to="" className="burger-menu__link">Полезные ссылки</Link>
+                                    <Link to="/useful-links" className="burger-menu__link">Полезные ссылки</Link>
                                 </li>
                                 <li className="burger-menu__item">
-                                    <Link to="" className="burger-menu__link">Whitepaper</Link>
+                                    <Link to="/whitepaper" className="burger-menu__link">Whitepaper</Link>
                                 </li>
                             </Dropdown>
                         </li>
                         <li className="burger-menu__item">
-                            <Link to="" className="burger-menu__link">Записи Ама</Link>
+                            <Link to="/AMA-records" className="burger-menu__link">Записи Ама</Link>
                         </li>
                     </ul>
 
@@ -297,10 +283,10 @@ const BurgerMenu = () => {
                     <h3 className="burger-menu__title">Продукты ECO</h3>
                     <ul className="burger-menu__category">
                         <li className="burger-menu__item">
-                            <Link to="" className="burger-menu__link">ECO app</Link>
+                            <Link to="/Eco-app" className="burger-menu__link">ECO app</Link>
                         </li>
                         <li className="burger-menu__item">
-                            <Link to="" className="burger-menu__link">Eco debit card</Link>
+                            <Link to="/Eco-debit-card" className="burger-menu__link">Eco debit card</Link>
                         </li>
                     </ul>
 

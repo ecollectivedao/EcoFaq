@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Backdrop } from '../Backdrop/Backdrop'
 import { Portal } from 'ui'
@@ -8,11 +8,24 @@ import './Modal.scss'
 type ModalProps = {
     children?: React.ReactNode
     modalSwitcher?: () => void
+    isOpen: boolean
 }
 
-export const Modal = ({ children, modalSwitcher }: ModalProps) => {
+export const Modal = ({ children, modalSwitcher, isOpen }: ModalProps) => {
+
+useEffect(() => {
+    console.log(isOpen)
+    if (isOpen) {
+       ( document.querySelector('body') as HTMLBodyElement).style.overflow = 'hidden'
+    } else {
+        (document.querySelector('body') as HTMLBodyElement).style.overflow = 'scroll'
+        console.log('wrind')
+    }
+}, [isOpen])
+
     return (
-        <Portal>
+        <>
+        {isOpen && <Portal>
             <AnimatePresence>
                 <Backdrop onHandler={modalSwitcher} />
                 <motion.div
@@ -34,6 +47,8 @@ export const Modal = ({ children, modalSwitcher }: ModalProps) => {
                     </div>
                 </motion.div>
             </AnimatePresence>
-        </Portal>
+        </Portal>}
+        </>
+        
     )
 }
