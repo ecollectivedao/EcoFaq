@@ -10,13 +10,13 @@ import './Menu.scss'
 
 const investorsAnimation = {
     hidden: {
-        x: '60px',
+        x: '-30px',
         opacity: 0
     },
     visible: (custom: number) => ({
         x: 0,
         opacity: 1,
-        transition: { duration: 0.4, ease: 'easeOut', delay: custom }
+        transition: { duration: 0.5, ease: 'easeInOut', delay: custom }
     })
 }
 
@@ -208,8 +208,10 @@ const BurgerMenu = () => {
     return (
         <>
             <div className={`backdrop ${menuActive ? 'active' : ''}`}
-                onClick={() => setMenuActive(state => !state)}></div>
+                onClick={() => setMenuActive(state => !state)}>
+            </div>
             <nav className='burger-menu'>
+
                 <div className={menuActive ? 'burger-menu__container active' : 'burger-menu__container'}
                     onClick={() => setMenuActive(state => !state)}>
                     <div
@@ -220,198 +222,198 @@ const BurgerMenu = () => {
                 </div>
                 <div
                     className={menuActive ? `burger-menu__list active` : `burger-menu__list`}>
-
-                    <motion.h3
-                        initial='hidden'
-                        whileInView='visible'
-                        viewport={{ amount: 0.6, once: true }}
-                        variants={investorsAnimation}
-                        className="burger-menu__title">Ru faq</motion.h3>
-                    <motion.ul className="burger-menu__category"
-                        initial='hidden'
-                        whileInView='visible'
-                        viewport={{ amount: 0.6, once: true }}>
-                        <motion.li className="burger-menu__item"
+                    {menuActive && <>
+                        <motion.h3
+                            initial='hidden'
+                            animate='visible'
+                            viewport={{ amount: 0.6, once: true }}
                             variants={investorsAnimation}
-                            custom={0.1}>
-                            <Link to="/welcome" className="burger-menu__link">Welcome to ECO</Link>
-                        </motion.li>
-                        <motion.li
-                            variants={investorsAnimation}
-                            custom={0.15}
-                            className="burger-menu__item">
-                            <Link to="/where-to-begin" className="burger-menu__link">С чего начать</Link>
-                        </motion.li>
-                        <motion.li className="burger-menu__item"
-                            variants={investorsAnimation}
-                            custom={0.2}>
-                            <Link to="/tokens" className="burger-menu__link">Tokens</Link>
-                        </motion.li>
-                        <motion.li className="burger-menu__item"
-                            variants={investorsAnimation}
-                            custom={0.25}>
-                            <Link to="/tokens-claim" className="burger-menu__link">Claim токенов</Link>
-                        </motion.li>
-                        <motion.li className="burger-menu__item"
-                            variants={investorsAnimation}
-                            custom={0.3}>
-                            <Dropdown title='О дискорд сервере'>
-                                <div className="burger-menu__item">
-                                    <Link to="/discord" className="burger-menu__link">Дискорд сервер</Link>
-                                </div>
-                                <div className="burger-menu__item">
-                                    <Link to="/discord-roles" className="burger-menu__link">Описание ролей в дискорд</Link>
-                                </div>
-                            </Dropdown>
-                        </motion.li>
-                    </motion.ul>
-
-
-
-                    <motion.h3
-                        initial='hidden'
-                        whileInView='visible'
-                        viewport={{ amount: 0.6, once: true }}
-                        variants={investorsAnimation}
-                        custom={0.35}
-                        className="burger-menu__title">Задания</motion.h3>
-                    <motion.ul
-                        className="burger-menu__category"
-                        initial='hidden'
-                        whileInView='visible'
-                        viewport={{ amount: 0.6, once: true }}>
-                        <motion.li
-                            className="burger-menu__item"
-                            variants={investorsAnimation}
-                            custom={0.4}>
-                            <Dropdown title='Задания'>
-                                <div className="burger-menu__item">
-                                    <Link to="/quests-active" className="burger-menu__link">Активные задания</Link>
-                                </div>
-                                <div className="burger-menu__item">
-                                    <Link to="/quests-archive" className="burger-menu__link">Архив заданий</Link>
-                                </div>
-                            </Dropdown>
-                        </motion.li>
-                    </motion.ul>
+                            className="burger-menu__title">Ru faq</motion.h3>
+                        <motion.ul className="burger-menu__category"
+                            initial='hidden'
+                            animate='visible'
+                            viewport={{ amount: 0.6, once: true }}>
+                            <motion.li className="burger-menu__item"
+                                variants={investorsAnimation}
+                                custom={0.1}>
+                                <Link to="/welcome" className="burger-menu__link">Welcome to ECO</Link>
+                            </motion.li>
+                            <motion.li
+                                variants={investorsAnimation}
+                                custom={0.15}
+                                className="burger-menu__item">
+                                <Link to="/where-to-begin" className="burger-menu__link">С чего начать</Link>
+                            </motion.li>
+                            <motion.li className="burger-menu__item"
+                                variants={investorsAnimation}
+                                custom={0.2}>
+                                <Link to="/tokens" className="burger-menu__link">Tokens</Link>
+                            </motion.li>
+                            <motion.li className="burger-menu__item"
+                                variants={investorsAnimation}
+                                custom={0.25}>
+                                <Link to="/tokens-claim" className="burger-menu__link">Claim токенов</Link>
+                            </motion.li>
+                            <motion.li className="burger-menu__item"
+                                variants={investorsAnimation}
+                                custom={0.3}>
+                                <Dropdown title='О дискорд сервере'>
+                                    <div className="burger-menu__item">
+                                        <Link to="/discord" className="burger-menu__link">Дискорд сервер</Link>
+                                    </div>
+                                    <div className="burger-menu__item">
+                                        <Link to="/discord-roles" className="burger-menu__link">Описание ролей в дискорд</Link>
+                                    </div>
+                                </Dropdown>
+                            </motion.li>
+                        </motion.ul>
 
 
 
-                    <motion.h3
-                        initial='hidden'
-                        whileInView='visible'
-                        viewport={{ amount: 0.6, once: true }}
-                        variants={investorsAnimation}
-                        custom={0.45}
-                        className="burger-menu__title">Governance</motion.h3>
-                    <motion.ul className="burger-menu__category"
-                        initial='hidden'
-                        whileInView='visible'
-                        viewport={{ amount: 0.6, once: true }}>
-                        <motion.li
+                        <motion.h3
+                            initial='hidden'
+                            animate='visible'
+                            viewport={{ amount: 0.6, once: true }}
                             variants={investorsAnimation}
-                            custom={0.5}
-                            className="burger-menu__item">
-                            <Link to="/community-managment" className="burger-menu__link">Сообщество</Link>
-                        </motion.li>
-                        <motion.li
-                            variants={investorsAnimation}
-                            custom={0.55}
-                            className="burger-menu__item">
-                            <Dropdown title='Предложения и голосование'>
-                                <div className="burger-menu__item">
-                                    <Link to="/offers-and-votes" className="burger-menu__link">Подача предложений и голосование</Link>
-                                </div>
-                                <div className="burger-menu__item">
-                                    <Link to="/accepted-offers" className="burger-menu__link">Принятые предложения</Link>
-                                </div>
-                            </Dropdown>
-                        </motion.li>
-                        <motion.li
-                            variants={investorsAnimation}
-                            custom={0.6}
-                            className="burger-menu__item">
-                            <Link to="/work-meets" className="burger-menu__link">Рабочие встречи</Link>
-                        </motion.li>
-                        <motion.li
-                            variants={investorsAnimation}
-                            custom={0.65}
-                            className="burger-menu__item">
-                            <Link to="/trustee" className="burger-menu__link">Trustee</Link>
-                        </motion.li>
-                        <motion.li
-                            variants={investorsAnimation}
-                            custom={0.7}
-                            className="burger-menu__item">
-                            <Link to="/monetary-policy" className="burger-menu__link">Monetary Policy</Link>
-                        </motion.li>
-                    </motion.ul>
+                            custom={0.35}
+                            className="burger-menu__title">Задания</motion.h3>
+                        <motion.ul
+                            className="burger-menu__category"
+                            initial='hidden'
+                            animate='visible'
+                            viewport={{ amount: 0.6, once: true }}>
+                            <motion.li
+                                className="burger-menu__item"
+                                variants={investorsAnimation}
+                                custom={0.4}>
+                                <Dropdown title='Задания'>
+                                    <div className="burger-menu__item">
+                                        <Link to="/quests-active" className="burger-menu__link">Активные задания</Link>
+                                    </div>
+                                    <div className="burger-menu__item">
+                                        <Link to="/quests-archive" className="burger-menu__link">Архив заданий</Link>
+                                    </div>
+                                </Dropdown>
+                            </motion.li>
+                        </motion.ul>
 
 
 
-                    <motion.h3
-                        initial='hidden'
-                        whileInView='visible'
-                        viewport={{ amount: 1, once: true }}
-                        variants={investorsAnimation}
-                        custom={0.75}
-                        className="burger-menu__title">Библиотека</motion.h3>
-                    <motion.ul
-                        className="burger-menu__category"
-                        initial='hidden'
-                        whileInView='visible'
-                        viewport={{ amount: 0.6, once: true }}>
-                        <motion.li
+                        <motion.h3
+                            initial='hidden'
+                            animate='visible'
+                            viewport={{ amount: 0.6, once: true }}
                             variants={investorsAnimation}
-                            // custom={0.8}
-                            className="burger-menu__item">
-                            <Dropdown title='Полезные ссылки'>
-                                <div className="burger-menu__item">
-                                    <Link to="/useful-links" className="burger-menu__link">Полезные ссылки</Link>
-                                </div>
-                                <div className="burger-menu__item">
-                                    <Link to="/whitepaper" className="burger-menu__link">Whitepaper</Link>
-                                </div>
-                            </Dropdown>
-                        </motion.li>
-                        <motion.li
-                            variants={investorsAnimation}
-                            // custom={0.85}
-                            className="burger-menu__item">
-                            <Link to="/AMA-records" className="burger-menu__link">Записи Ама</Link>
-                        </motion.li>
-                    </motion.ul>
+                            custom={0.45}
+                            className="burger-menu__title">Governance</motion.h3>
+                        <motion.ul className="burger-menu__category"
+                            initial='hidden'
+                            animate='visible'
+                            viewport={{ amount: 0.6, once: true }}>
+                            <motion.li
+                                variants={investorsAnimation}
+                                custom={0.5}
+                                className="burger-menu__item">
+                                <Link to="/community-managment" className="burger-menu__link">Сообщество</Link>
+                            </motion.li>
+                            <motion.li
+                                variants={investorsAnimation}
+                                custom={0.55}
+                                className="burger-menu__item">
+                                <Dropdown title='Предложения и голосование'>
+                                    <div className="burger-menu__item">
+                                        <Link to="/offers-and-votes" className="burger-menu__link">Подача предложений и голосование</Link>
+                                    </div>
+                                    <div className="burger-menu__item">
+                                        <Link to="/accepted-offers" className="burger-menu__link">Принятые предложения</Link>
+                                    </div>
+                                </Dropdown>
+                            </motion.li>
+                            <motion.li
+                                variants={investorsAnimation}
+                                custom={0.6}
+                                className="burger-menu__item">
+                                <Link to="/work-meets" className="burger-menu__link">Рабочие встречи</Link>
+                            </motion.li>
+                            <motion.li
+                                variants={investorsAnimation}
+                                custom={0.65}
+                                className="burger-menu__item">
+                                <Link to="/trustee" className="burger-menu__link">Trustee</Link>
+                            </motion.li>
+                            <motion.li
+                                variants={investorsAnimation}
+                                custom={0.7}
+                                className="burger-menu__item">
+                                <Link to="/monetary-policy" className="burger-menu__link">Monetary Policy</Link>
+                            </motion.li>
+                        </motion.ul>
 
 
-                    <motion.h3
-                        initial='hidden'
-                        whileInView='visible'
-                        viewport={{ amount: 0.6, once: true }}
-                        // custom={0.9}
-                        variants={investorsAnimation}
-                        className="burger-menu__title">Продукты ECO</motion.h3>
-                    <motion.ul
-                        initial='hidden'
-                        whileInView='visible'
-                        viewport={{ amount: 0.6, once: true }}
-                        className="burger-menu__category">
-                        <motion.li
-                            variants={investorsAnimation}
-                            // custom={0.95}
-                            className="burger-menu__item">
-                            <Link to="/Eco-app" className="burger-menu__link">ECO app</Link>
-                        </motion.li>
-                        <motion.li
-                            variants={investorsAnimation}
-                            // custom={1}
-                            className="burger-menu__item">
-                            <Link to="/Eco-debit-card" className="burger-menu__link">Eco debit card</Link>
-                        </motion.li>
-                    </motion.ul>
 
-                    <h3 className="burger-menu__title">Archive</h3>
-                    <motion.ul className="burger-menu__category">
-                        {/* <motion.li className="burger-menu__item">
+                        <motion.h3
+                            initial='hidden'
+                            animate='visible'
+                            viewport={{ amount: 1, once: true }}
+                            variants={investorsAnimation}
+                            custom={0.75}
+                            className="burger-menu__title">Библиотека</motion.h3>
+                        <motion.ul
+                            className="burger-menu__category"
+                            initial='hidden'
+                            animate='visible'
+                            viewport={{ amount: 0.6, once: true }}>
+                            <motion.li
+                                variants={investorsAnimation}
+                                custom={0.8}
+                                className="burger-menu__item">
+                                <Dropdown title='Полезные ссылки'>
+                                    <div className="burger-menu__item">
+                                        <Link to="/useful-links" className="burger-menu__link">Полезные ссылки</Link>
+                                    </div>
+                                    <div className="burger-menu__item">
+                                        <Link to="/whitepaper" className="burger-menu__link">Whitepaper</Link>
+                                    </div>
+                                </Dropdown>
+                            </motion.li>
+                            <motion.li
+                                variants={investorsAnimation}
+                                custom={0.85}
+                                className="burger-menu__item">
+                                <Link to="/AMA-records" className="burger-menu__link">Записи Ама</Link>
+                            </motion.li>
+                        </motion.ul>
+
+
+                        <motion.h3
+                            initial='hidden'
+                            animate='visible'
+                            viewport={{ amount: 0.6, once: true }}
+                            custom={0.9}
+                            variants={investorsAnimation}
+                            className="burger-menu__title">Продукты ECO</motion.h3>
+                        <motion.ul
+                            initial='hidden'
+                            animate='visible'
+                            viewport={{ amount: 0.6, once: true }}
+                            className="burger-menu__category">
+                            <motion.li
+                                variants={investorsAnimation}
+                                custom={0.95}
+                                className="burger-menu__item">
+                                <Link to="/Eco-app" className="burger-menu__link">ECO app</Link>
+                            </motion.li>
+                            <motion.li
+                                variants={investorsAnimation}
+                                custom={1}
+                                className="burger-menu__item">
+                                <Link to="/Eco-debit-card" className="burger-menu__link">Eco debit card</Link>
+                            </motion.li>
+                        </motion.ul>
+
+                        {/* <h3 className="burger-menu__title">Archive</h3> */}
+                        {/* <motion.ul className="burger-menu__category"> */}
+                            {/* <motion.li className="burger-menu__item">
                             <Dropdown title='Полезные ссылки'>
                                 <motion.li className="burger-menu__item">
                                     <Link to="" className="burger-menu__link">Полезные ссылки</Link>
@@ -476,7 +478,9 @@ const BurgerMenu = () => {
                                 </motion.li>
                             </Dropdown>
                         </motion.li> */}
-                    </motion.ul>
+                        {/* </motion.ul> */}
+                    </>}
+
                 </div>
             </nav>
         </>
