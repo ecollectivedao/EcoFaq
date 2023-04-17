@@ -1,10 +1,25 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 import { Dropdown } from 'ui/Dropdown/Dropdown'
 import { Submenu } from 'ui/Submenu/Submenu'
 
 import './Menu.scss'
+
+
+const investorsAnimation = {
+    hidden: {
+        x: '30px',
+        opacity: 0
+    },
+    visible: (custom: number) => ({
+        x: 0,
+        opacity: 1,
+        transition: { duration: 0.4, ease: 'easeOut', delay: custom }
+    })
+}
+
 
 export const Menu = () => {
     const [desktopMenu, setDesktopMenu] = useState(true)
@@ -42,144 +57,153 @@ export const Menu = () => {
 const DesktopMenu = () => {
 
     return (
-        <ul className='menu__list'>
+        <motion.ul className='menu__list'>
             <Submenu name='Ru FAQ'>
-                <li className="submenu__item">
+                <motion.li className="submenu__item">
                     <Link to='/welcome' className="submenu__link">Welcome to ECO</Link>
-                </li>
-                <li className="submenu__item">
+                </motion.li>
+                <motion.li className="submenu__item">
                     <Link to='/where-to-begin' className="submenu__link">С чего начать?</Link>
-                </li>
-                <li className="submenu__item">
+                </motion.li>
+                <motion.li className="submenu__item">
                     <Link to="/tokens" className="submenu__link">Tokens</Link>
-                </li>
-                <li className="submenu__item">
+                </motion.li>
+                <motion.li className="submenu__item">
                     <Link to="/tokens-claim" className="submenu__link">Claim токенов</Link>
-                </li>
-                <li className="submenu__item">
+                </motion.li>
+                <motion.li className="submenu__item">
                     <Link to="/discord" className="submenu__link">Discord сервер</Link>
-                </li>
-                <li className="submenu__item">
+                </motion.li>
+                <motion.li className="submenu__item">
                     <Link to="/discord-roles" className="submenu__link">Описание ролей в Discord</Link>
-                </li>
+                </motion.li>
             </Submenu>
 
             <Submenu name='Задания'>
-                <li className="submenu__item">
+                <motion.li className="submenu__item">
                     <Link to="/quests-active" className="submenu__link">Активные задания</Link>
-                </li>
-                <li className="submenu__item">
+                </motion.li>
+                <motion.li className="submenu__item">
                     <Link to="/quests-archive" className="submenu__link">Архив</Link>
-                </li>
+                </motion.li>
             </Submenu>
 
             <Submenu name='Governance'>
-                <li className="submenu__item">
+                <motion.li className="submenu__item">
                     <Link to="/community-managment" className="submenu__link">Управление сообществом</Link>
-                </li>
-                <li className="submenu__item">
+                </motion.li>
+                <motion.li className="submenu__item">
                     <Link to="/offers-and-votes" className="submenu__link">Подача редложений и голосование</Link>
-                </li>
-                <li className="submenu__item">
+                </motion.li>
+                <motion.li className="submenu__item">
                     <Link to="/accepted-offers" className="submenu__link">Принятые предложения</Link>
-                </li>
-                <li className="submenu__item">
+                </motion.li>
+                <motion.li className="submenu__item">
                     <Link to="/work-meets" className="submenu__link">Рабочие встречи</Link>
-                </li>
-                <li className="submenu__item">
+                </motion.li>
+                <motion.li className="submenu__item">
                     <Link to="/trustee" className="submenu__link">Trustee</Link>
-                </li>
-                <li className="submenu__item">
+                </motion.li>
+                <motion.li className="submenu__item">
                     <Link to="/monetary-policy" className="submenu__link">Monetary Policy</Link>
-                </li>
+                </motion.li>
             </Submenu>
 
             <Submenu name='Библиотека'>
-                <li className="submenu__item">
+                <motion.li className="submenu__item">
                     <Link to="/useful-links" className="submenu__link">Полезные ссылки</Link>
-                </li>
-                <li className="submenu__item">
+                </motion.li>
+                <motion.li className="submenu__item">
                     <Link to="/whitepaper" className="submenu__link">Whitepaper</Link>
-                </li>
-                <li className="submenu__item">
+                </motion.li>
+                <motion.li className="submenu__item">
                     <Link to="/AMA-records" className="submenu__link">Записи АМА</Link>
-                </li>
+                </motion.li>
             </Submenu>
 
             <Submenu name='Продукты ECO'>
-                <li className="submenu__item">
+                <motion.li className="submenu__item">
                     <Link to="/eco-app" className="submenu__link">ECO app</Link>
-                </li>
-                <li className="submenu__item">
+                </motion.li>
+                <motion.li className="submenu__item">
                     <Link to="/eco-debit-card" className="submenu__link">ECO debit card</Link>
-                </li>
+                </motion.li>
             </Submenu>
 
             <Submenu name='Archive'>
-                <li className="submenu__item">
+                <motion.li className="submenu__item">
                     <Link to="#" className="submenu__link">RU</Link>
-                </li>
-                <li className="submenu__item">
+                </motion.li>
+                <motion.li className="submenu__item">
                     <Link to="#" className="submenu__link">EN</Link>
-                </li>
-                <li className="submenu__item">
+                </motion.li>
+                <motion.li className="submenu__item">
                     <Link to="#" className="submenu__link">FR</Link>
-                </li>
-                <li className="submenu__item">
+                </motion.li>
+                <motion.li className="submenu__item">
                     <Link to="#" className="submenu__link">KR</Link>
-                </li>
-                <li className="submenu__item">
+                </motion.li>
+                <motion.li className="submenu__item">
                     <Link to="#" className="submenu__link">JP</Link>
-                </li>
+                </motion.li>
             </Submenu>
 
 
 
-            {/* <li className="menu__list-item">
+            {/* <motion.li className="menu__list-item">
                 <Link to="" className="menu__list-link">Ru FAQ</Link>
-            </li>
-            <li className="menu__list-item">
+            </motion.li>
+            <motion.li className="menu__list-item">
             <Link to="" className="menu__list-link">Активные задания</Link>
-            </li>
-            <li className="menu__list-item">
+            </motion.li>
+            <motion.li className="menu__list-item">
             <Link to="" className="menu__list-link">Governance</Link>
-            </li>
-            <li className="menu__list-item">
+            </motion.li>
+            <motion.li className="menu__list-item">
             <Link to="" className="menu__list-link">Библиотека</Link>
-            </li>
-            <li className="menu__list-item">
+            </motion.li>
+            <motion.li className="menu__list-item">
             <Link to="" className="menu__list-link">Продукты</Link>
-            </li>
-            <li className="menu__list-item">
+            </motion.li>
+            <motion.li className="menu__list-item">
             <Link to="" className="menu__list-link">Archive</Link>
-            </li> */}
+            </motion.li> */}
 
-            {/* <li className="menu__list-item">
+            {/* <motion.li className="menu__list-item">
                 <p className="menu__list-item">Ru FAQ</p> 
-                <ul className="menu__list-dropdown dropdown">
-                    <li className="dropdown__item">
+                <motion.ul className="menu__list-dropdown dropdown">
+                    <motion.li className="dropdown__item">
                         <Link to="#" className="dropdown__link">Welcome to ECO</Link>
-                    </li>
-                    <li className="dropdown__item">
+                    </motion.li>
+                    <motion.li className="dropdown__item">
                         <Link to="#" className="dropdown__link">С чего начать?</Link>
-                    </li>
-                    <li className="dropdown__item">
+                    </motion.li>
+                    <motion.li className="dropdown__item">
                         <Link to="#" className="dropdown__link">Tokens</Link>
-                    </li>
-                    <li className="dropdown__item">
+                    </motion.li>
+                    <motion.li className="dropdown__item">
                         <Link to="#" className="dropdown__link">Claim токенов</Link>
-                    </li>
-                    <li className="dropdown__item">
+                    </motion.li>
+                    <motion.li className="dropdown__item">
                         <Link to="#" className="dropdown__link">Discord сервер</Link>
-                    </li>
-                </ul>
-            </li> */}
-        </ul>
+                    </motion.li>
+                </motion.ul>
+            </motion.li> */}
+        </motion.ul>
     )
 }
 
 const BurgerMenu = () => {
     const [menuActive, setMenuActive] = useState(false)
+
+    useEffect(() => {
+        if (menuActive) {
+            (document.querySelector('body') as HTMLBodyElement).style.overflow = 'hidden'
+        } else {
+            (document.querySelector('body') as HTMLBodyElement).style.overflow = 'scroll'
+        }
+    }, [menuActive])
+
 
     return (
         <>
@@ -194,170 +218,265 @@ const BurgerMenu = () => {
                         <div className='burger-menu__decor bottom'></div>
                     </div>
                 </div>
-                <div className={menuActive ? `burger-menu__list active` : `burger-menu__list`}>
+                <div
+                    className={menuActive ? `burger-menu__list active` : `burger-menu__list`}>
 
-                    <h3 className="burger-menu__title">Ru faq</h3>
-                    <ul className="burger-menu__category">
-                        <li className="burger-menu__item">
+                    <motion.h3
+                        initial='hidden'
+                        whileInView='visible'
+                        viewport={{ amount: 0.6, once: true }}
+                        variants={investorsAnimation}
+                        className="burger-menu__title">Ru faq</motion.h3>
+                    <motion.ul className="burger-menu__category"
+                        initial='hidden'
+                        whileInView='visible'
+                        viewport={{ amount: 0.6, once: true }}>
+                        <motion.li className="burger-menu__item"
+                            variants={investorsAnimation}
+                            custom={0.1}>
                             <Link to="/welcome" className="burger-menu__link">Welcome to ECO</Link>
-                        </li>
-                        <li className="burger-menu__item">
+                        </motion.li>
+                        <motion.li
+                            variants={investorsAnimation}
+                            custom={0.15}
+                            className="burger-menu__item">
                             <Link to="/where-to-begin" className="burger-menu__link">С чего начать</Link>
-                        </li>
-                        <li className="burger-menu__item">
+                        </motion.li>
+                        <motion.li className="burger-menu__item"
+                            variants={investorsAnimation}
+                            custom={0.2}>
                             <Link to="/tokens" className="burger-menu__link">Tokens</Link>
-                        </li>
-                        <li className="burger-menu__item">
+                        </motion.li>
+                        <motion.li className="burger-menu__item"
+                            variants={investorsAnimation}
+                            custom={0.25}>
                             <Link to="/tokens-claim" className="burger-menu__link">Claim токенов</Link>
-                        </li>
-                        <li className="burger-menu__item">
+                        </motion.li>
+                        <motion.li className="burger-menu__item"
+                            variants={investorsAnimation}
+                            custom={0.3}>
                             <Dropdown title='О дискорд сервере'>
-                                <li className="burger-menu__item">
+                                <div className="burger-menu__item">
                                     <Link to="/discord" className="burger-menu__link">Дискорд сервер</Link>
-                                </li>
-                                <li className="burger-menu__item">
+                                </div>
+                                <div className="burger-menu__item">
                                     <Link to="/discord-roles" className="burger-menu__link">Описание ролей в дискорд</Link>
-                                </li>
+                                </div>
                             </Dropdown>
-                        </li>
-                    </ul>
+                        </motion.li>
+                    </motion.ul>
 
-                    <h3 className="burger-menu__title">Задания</h3>
-                    <ul className="burger-menu__category">
-                        <li className="burger-menu__item">
+
+
+                    <motion.h3
+                        initial='hidden'
+                        whileInView='visible'
+                        viewport={{ amount: 0.6, once: true }}
+                        variants={investorsAnimation}
+                        custom={0.35}
+                        className="burger-menu__title">Задания</motion.h3>
+                    <motion.ul
+                        className="burger-menu__category"
+                        initial='hidden'
+                        whileInView='visible'
+                        viewport={{ amount: 0.6, once: true }}>
+                        <motion.li
+                            className="burger-menu__item"
+                            variants={investorsAnimation}
+                            custom={0.4}>
                             <Dropdown title='Задания'>
-                                <li className="burger-menu__item">
+                                <div className="burger-menu__item">
                                     <Link to="/quests-active" className="burger-menu__link">Активные задания</Link>
-                                </li>
-                                <li className="burger-menu__item">
+                                </div>
+                                <div className="burger-menu__item">
                                     <Link to="/quests-archive" className="burger-menu__link">Архив заданий</Link>
-                                </li>
+                                </div>
                             </Dropdown>
-                        </li>
-                    </ul>
+                        </motion.li>
+                    </motion.ul>
 
-                    <h3 className="burger-menu__title">Governance</h3>
-                    <ul className="burger-menu__category">
-                        <li className="burger-menu__item">
+
+
+                    <motion.h3
+                        initial='hidden'
+                        whileInView='visible'
+                        viewport={{ amount: 0.6, once: true }}
+                        variants={investorsAnimation}
+                        custom={0.45}
+                        className="burger-menu__title">Governance</motion.h3>
+                    <motion.ul className="burger-menu__category"
+                        initial='hidden'
+                        whileInView='visible'
+                        viewport={{ amount: 0.6, once: true }}>
+                        <motion.li
+                            variants={investorsAnimation}
+                            custom={0.5}
+                            className="burger-menu__item">
                             <Link to="/community-managment" className="burger-menu__link">Сообщество</Link>
-                        </li>
-                        <li className="burger-menu__item">
+                        </motion.li>
+                        <motion.li
+                            variants={investorsAnimation}
+                            custom={0.55}
+                            className="burger-menu__item">
                             <Dropdown title='Предложения и голосование'>
-                             <li className="burger-menu__item">
+                                <div className="burger-menu__item">
                                     <Link to="/offers-and-votes" className="burger-menu__link">Подача предложений и голосование</Link>
-                                </li>
-                                <li className="burger-menu__item">
+                                </div>
+                                <div className="burger-menu__item">
                                     <Link to="/accepted-offers" className="burger-menu__link">Принятые предложения</Link>
-                                </li>
+                                </div>
                             </Dropdown>
-                        </li>
-                        <li className="burger-menu__item">
+                        </motion.li>
+                        <motion.li
+                            variants={investorsAnimation}
+                            custom={0.6}
+                            className="burger-menu__item">
                             <Link to="/work-meets" className="burger-menu__link">Рабочие встречи</Link>
-                        </li>
-                        <li className="burger-menu__item">
+                        </motion.li>
+                        <motion.li
+                            variants={investorsAnimation}
+                            custom={0.65}
+                            className="burger-menu__item">
                             <Link to="/trustee" className="burger-menu__link">Trustee</Link>
-                        </li>
-                        <li className="burger-menu__item">
+                        </motion.li>
+                        <motion.li
+                            variants={investorsAnimation}
+                            custom={0.7}
+                            className="burger-menu__item">
                             <Link to="/monetary-policy" className="burger-menu__link">Monetary Policy</Link>
-                        </li>
-                    </ul>
+                        </motion.li>
+                    </motion.ul>
 
-                    <h3 className="burger-menu__title">Библиотека</h3>
-                    <ul className="burger-menu__category">
-                        <li className="burger-menu__item">
+
+
+                    <motion.h3
+                        initial='hidden'
+                        whileInView='visible'
+                        viewport={{ amount: 0.6, once: true }}
+                        variants={investorsAnimation}
+                        // custom={0.75}
+                        className="burger-menu__title">Библиотека</motion.h3>
+                    <motion.ul
+                        className="burger-menu__category"
+                        initial='hidden'
+                        whileInView='visible'
+                        viewport={{ amount: 0.6, once: true }}>
+                        <motion.li
+                            variants={investorsAnimation}
+                            // custom={0.8}
+                            className="burger-menu__item">
                             <Dropdown title='Полезные ссылки'>
-                                <li className="burger-menu__item">
+                                <div className="burger-menu__item">
                                     <Link to="/useful-links" className="burger-menu__link">Полезные ссылки</Link>
-                                </li>
-                                <li className="burger-menu__item">
+                                </div>
+                                <div className="burger-menu__item">
                                     <Link to="/whitepaper" className="burger-menu__link">Whitepaper</Link>
-                                </li>
+                                </div>
                             </Dropdown>
-                        </li>
-                        <li className="burger-menu__item">
+                        </motion.li>
+                        <motion.li
+                            variants={investorsAnimation}
+                            // custom={0.85}
+                            className="burger-menu__item">
                             <Link to="/AMA-records" className="burger-menu__link">Записи Ама</Link>
-                        </li>
-                    </ul>
+                        </motion.li>
+                    </motion.ul>
 
 
-                    <h3 className="burger-menu__title">Продукты ECO</h3>
-                    <ul className="burger-menu__category">
-                        <li className="burger-menu__item">
+                    <motion.h3
+                        initial='hidden'
+                        whileInView='visible'
+                        viewport={{ amount: 0.6, once: true }}
+                        // custom={0.9}
+                        variants={investorsAnimation}
+                        className="burger-menu__title">Продукты ECO</motion.h3>
+                    <motion.ul
+                        initial='hidden'
+                        whileInView='visible'
+                        viewport={{ amount: 0.6, once: true }}
+                        className="burger-menu__category">
+                        <motion.li
+                            variants={investorsAnimation}
+                            // custom={0.95}
+                            className="burger-menu__item">
                             <Link to="/Eco-app" className="burger-menu__link">ECO app</Link>
-                        </li>
-                        <li className="burger-menu__item">
+                        </motion.li>
+                        <motion.li
+                            variants={investorsAnimation}
+                            // custom={1}
+                            className="burger-menu__item">
                             <Link to="/Eco-debit-card" className="burger-menu__link">Eco debit card</Link>
-                        </li>
-                    </ul>
+                        </motion.li>
+                    </motion.ul>
 
                     <h3 className="burger-menu__title">Archive</h3>
-                    <ul className="burger-menu__category">
-                        <li className="burger-menu__item">
+                    <motion.ul className="burger-menu__category">
+                        {/* <motion.li className="burger-menu__item">
                             <Dropdown title='Полезные ссылки'>
-                                <li className="burger-menu__item">
+                                <motion.li className="burger-menu__item">
                                     <Link to="" className="burger-menu__link">Полезные ссылки</Link>
-                                </li>
-                                <li className="burger-menu__item">
+                                </motion.li>
+                                <motion.li className="burger-menu__item">
                                     <Link to="" className="burger-menu__link">Whitepaper</Link>
-                                </li>
-                                <li className="burger-menu__item">
+                                </motion.li>
+                                <motion.li className="burger-menu__item">
                                     <Link to="" className="burger-menu__link">Whitepaper</Link>
-                                </li>
+                                </motion.li>
                             </Dropdown>
-                        </li>
-                        <li className="burger-menu__item">
+                        </motion.li>
+                        <motion.li className="burger-menu__item">
                             <Dropdown title='Полезные ссылки'>
-                                <li className="burger-menu__item">
+                                <motion.li className="burger-menu__item">
                                     <Link to="" className="burger-menu__link">Полезные ссылки</Link>
-                                </li>
-                                <li className="burger-menu__item">
+                                </motion.li>
+                                <motion.li className="burger-menu__item">
                                     <Link to="" className="burger-menu__link">Whitepaper</Link>
-                                </li>
-                                <li className="burger-menu__item">
+                                </motion.li>
+                                <motion.li className="burger-menu__item">
                                     <Link to="" className="burger-menu__link">Whitepaper</Link>
-                                </li>
+                                </motion.li>
                             </Dropdown>
-                        </li>
-                        <li className="burger-menu__item">
+                        </motion.li>
+                        <motion.li className="burger-menu__item">
                             <Dropdown title='Полезные ссылки'>
-                                <li className="burger-menu__item">
+                                <motion.li className="burger-menu__item">
                                     <Link to="" className="burger-menu__link">Полезные ссылки</Link>
-                                </li>
-                                <li className="burger-menu__item">
+                                </motion.li>
+                                <motion.li className="burger-menu__item">
                                     <Link to="" className="burger-menu__link">Whitepaper</Link>
-                                </li>
-                                <li className="burger-menu__item">
+                                </motion.li>
+                                <motion.li className="burger-menu__item">
                                     <Link to="" className="burger-menu__link">Whitepaper</Link>
-                                </li>
+                                </motion.li>
                             </Dropdown>
-                        </li>
-                        <li className="burger-menu__item">
+                        </motion.li>
+                        <motion.li className="burger-menu__item">
                             <Dropdown title='Полезные ссылки'>
-                                <li className="burger-menu__item">
+                                <motion.li className="burger-menu__item">
                                     <Link to="" className="burger-menu__link">Полезные ссылки</Link>
-                                </li>
-                                <li className="burger-menu__item">
+                                </motion.li>
+                                <motion.li className="burger-menu__item">
                                     <Link to="" className="burger-menu__link">Whitepaper</Link>
-                                </li>
-                                <li className="burger-menu__item">
+                                </motion.li>
+                                <motion.li className="burger-menu__item">
                                     <Link to="" className="burger-menu__link">Whitepaper</Link>
-                                </li>
+                                </motion.li>
                             </Dropdown>
-                        </li>
-                        <li className="burger-menu__item">
+                        </motion.li>
+                        <motion.li className="burger-menu__item">
                             <Dropdown title='Полезные ссылки'>
-                                <li className="burger-menu__item">
+                                <motion.li className="burger-menu__item">
                                     <Link to="" className="burger-menu__link">Полезные ссылки</Link>
-                                </li>
-                                <li className="burger-menu__item">
+                                </motion.li>
+                                <motion.li className="burger-menu__item">
                                     <Link to="" className="burger-menu__link">Whitepaper</Link>
-                                </li>
-                                <li className="burger-menu__item">
+                                </motion.li>
+                                <motion.li className="burger-menu__item">
                                     <Link to="" className="burger-menu__link">Whitepaper</Link>
-                                </li>
+                                </motion.li>
                             </Dropdown>
-                        </li>
-                    </ul>
+                        </motion.li> */}
+                    </motion.ul>
                 </div>
             </nav>
         </>

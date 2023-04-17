@@ -2,7 +2,9 @@ import { MainPage, Discord, Tokens, TokensClaim, WelcomeToEco, WhereToBegin, Dis
 
 import { Route, Routes } from 'react-router-dom'
 
+
 export const Routings = () => {
+
     return (
         <Routes>
             <Route path='/' element={<MainPage />}/>

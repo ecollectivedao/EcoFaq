@@ -1,6 +1,6 @@
 .burger-menu {
     position: relative;
-    z-index: 20;
+    z-index: 120;
     order: 2;
 
     &__list {
@@ -212,3 +212,15 @@
     // }
 
 }
+
+
+// @keyframes item__reveal {
+//     0% {
+//         opacity: 0;
+//         transform: translateX(100px)
+//     }
+//     100% {
+//         opacity: 1;
+//         transform: translateX(0px)
+//     }
+// }
