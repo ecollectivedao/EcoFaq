@@ -10,7 +10,7 @@ import './Menu.scss'
 
 const investorsAnimation = {
     hidden: {
-        x: '30px',
+        x: '60px',
         opacity: 0
     },
     visible: (custom: number) => ({
