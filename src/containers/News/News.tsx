@@ -47,14 +47,18 @@ export const News = () => {
             className="news">
             <div className="news__container">
                 <div className="news__block">
-                    <motion.div
-                        className="news__image"
-                        viewport={{ amount: 0.5, once: true }}
-                        initial='hidden'
-                        whileInView='visible'
-                        variants={imageReveal}>
-                        <img src={coins} alt="news image" />
-                    </motion.div>
+                    <div className="news__image">
+                        <motion.div className="news__image-wrapper"
+                         viewport={{ amount: 0.5, once: true }}
+                         initial='hidden'
+                         whileInView='visible'
+                         variants={imageReveal}
+                        >
+                            <img
+                                src={coins}
+                                alt="news image" />
+                        </motion.div>
+                    </div>
                     <motion.div
                         className="news__info">
                         <motion.h2 className="news__title"
@@ -77,14 +81,14 @@ export const News = () => {
                             custom={0.15}
                             className="news__descr">ЕСО - это валюта с растущим сообществом, создающим продукты и услуги, способствующие ее развитию. Она разработана как децентрализованная альтернатива фиатным валютам, использующая денежную политику для развития и поддержки растущей экономики.</motion.p>
                         <motion.p initial='hidden'
-                            whileInView='visible'
-                            viewport={{ amount: 0.2, once: true }}
+                            animate='visible'
                             variants={textAnimation}
+                            custom={0.2}
                             className="news__descr">Идея Eco основана на следующих предположениях:
                             При наличии более качественных экономических данных и более прозрачной структуры стимулов для управления, можно управлять и развивать резервную валюту, которая является цифровой и более четко соответствует коллективным интересам ее пользователей (нас).</motion.p>
                         <motion.p initial='hidden'
-                            whileInView='visible'
-                            viewport={{ amount: 0.2, once: true }}
+                            animate='visible'
+                            custom={0.2}
                             variants={textAnimation} className="news__descr">Проще говоря: ЕСО - это денежная игра, в которой мы действительно можем выиграть - вместе.</motion.p>
                     </motion.div>
                 </div>
