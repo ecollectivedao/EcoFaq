@@ -354,7 +354,7 @@ const BurgerMenu = () => {
                         whileInView='visible'
                         viewport={{ amount: 1, once: true }}
                         variants={investorsAnimation}
-                        // custom={0.75}
+                        custom={0.75}
                         className="burger-menu__title">Библиотека</motion.h3>
                     <motion.ul
                         className="burger-menu__category"
