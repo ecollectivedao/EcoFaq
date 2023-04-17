@@ -352,7 +352,7 @@ const BurgerMenu = () => {
                     <motion.h3
                         initial='hidden'
                         whileInView='visible'
-                        viewport={{ amount: 0.6, once: true }}
+                        viewport={{ amount: 1, once: true }}
                         variants={investorsAnimation}
                         // custom={0.75}
                         className="burger-menu__title">Библиотека</motion.h3>
