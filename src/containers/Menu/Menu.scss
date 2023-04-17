@@ -110,6 +110,7 @@
           box-shadow: 0 0 10px var(--btn-activeColor);
     }
     &__title {
+        max-width: 200px;
         font-weight: 600;
         text-transform: uppercase;
         font-size: 16px;
@@ -119,6 +120,10 @@
     }
     &__category {
         margin-left: 10px;
+        max-width: 200px;
+    }
+    &__category:last-child{
+        margin-bottom: 50px;
     }
     &__link {
         text-decoration: none;
