@@ -19,9 +19,10 @@ export const titleAnimation = {
     visible: (custom: number) => ({
         y: 0,
         opacity: 1,
-        transition: { duration: 1, delay: custom, ease: 'backInOut' }
+        transition: { duration: 0.5, delay: custom, ease: 'easeInOut' }
     })
   }
+
 
 export const imageReveal = {
     hidden: {
