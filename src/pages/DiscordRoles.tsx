@@ -4,6 +4,7 @@ import { db } from 'config/firebaseConfig'
 import { doc, getDoc } from 'firebase/firestore'
 
 import { Explanation } from 'containers'
+import { H3, Heading, Li } from "ui"
 
 
 export const DiscordRoles = () => {
@@ -39,37 +40,40 @@ export const DiscordRoles = () => {
     return (
         <SecondaryLayout>
             <section className="block-primary">
-                <h2 className="block-primary__title">
+                {/* <h2 className="block-primary__title">
                     DISCORD Роли
                 </h2>
-                <p className="block-primary__subtitle">Описание ролей в Discord</p>
+                <p className="block-primary__subtitle">Описание ролей в Discord</p> */}
+                <Heading title='DISCORD Роли'>
+                Описание ролей в Discord
+                </Heading>
                 {view}
-                <h3 className="block-primary__big">
+                <H3>
                     List of active BOTS
-                </h3>
+                </H3>
                 <ul className="block-primary__list">
-                    <li className="block-primary__list-item">
+                    <Li>
                         Eco • LotteryBot - Бот, который может создавать лотереи с поддающейся проверке случайностью.
-                    </li>
+                    </Li>
 
-                    <li className="block-primary__list-item">
+                    <Li>
                         ECOrding - боту разрешено писать и удалять сообщения
-                    </li>
-                    <li className="block-primary__list-item">
+                    </Li>
+                    <Li>
                         Eco Voting Captcha Bot - Бот, который защищает голосование от злоупотреблений спамерами
-                    </li>
-                    <li className="block-primary__list-item">
+                    </Li>
+                    <Li>
                         EcoMemeBot - Бот, который определяет, сколько пользователей отреагировали на мем, и репостить его в топ-канал мемов.
-                    </li>
-                    <li className="block-primary__list-item">
+                    </Li>
+                    <Li>
                         The Accountant - эскроу-бот ( бот показывающий переводы эко поинтов.
-                    </li>
-                    <li className="block-primary__list-item">
+                    </Li>
+                    <Li>
                         EcoDiscordButler - Бот, который автоматически назначает роли в зависимости от того, какой URL-адрес приглашения был использован.
-                    </li>
-                    <li className="block-primary__list-item">
+                    </Li>
+                    <Li>
                         Eco FAQ Bot - Бот, который отвечает на часто задаваемые вопросы, связанные с ECO Discord.
-                    </li>
+                    </Li>
                 </ul>
             </section>
         </SecondaryLayout>

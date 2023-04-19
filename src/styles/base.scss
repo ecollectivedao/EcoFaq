@@ -115,10 +115,10 @@ section {
         color: var(--color-text);
         font-weight: 500;
     }
-    &__img{
-        margin-top: 20px;
-        width: 100%!important;
-    }
+    // &__img{
+    //     margin-top: 20px;
+    //     width: 100%!important;
+    // }
     &__gallery {
         color: var(--color-text2);
         font-size: 18px;
@@ -161,13 +161,13 @@ section {
         width: 50%!important;
         display: block;
     }
-    &__link {
-        line-height: 1.5;
-        margin-top: 20px;
-        color: var(--color-active);
-        margin-bottom: 16px;
-        font-size: 18px;
-    }
+    // &__link {
+    //     line-height: 1.5;
+    //     margin-top: 20px;
+    //     color: var(--color-active);
+    //     margin-bottom: 16px;
+    //     font-size: 18px;
+    // }
     &__mixed {
         display: flex;
         gap: 10px;

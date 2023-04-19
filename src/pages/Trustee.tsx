@@ -1,14 +1,16 @@
 import {SecondaryLayout} from 'layouts/SecondaryLayout'
 import {TrusteeList} from 'containers'
+import { Heading } from 'ui'
 
 export const Trustee = () => {
   return (
     <SecondaryLayout>
             <section className="block-primary">
-            <h2 className="block-primary__title">
-                    Trustee
-                </h2>
-                <p className="block-primary__subtitle">Участники trustee и их краткое интро</p>
+
+              <Heading title='Trustee'>
+                Участники trustee и их краткое интро
+              </Heading>
+              
                 <TrusteeList/>
             </section>
     </SecondaryLayout>

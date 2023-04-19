@@ -6,8 +6,6 @@ export const WelcomeToEco = () => {
     return (
         <SecondaryLayout>
                     <News/>
-                    {/* <News2/>
-                    <NewsCenter/> */}
         </SecondaryLayout>
     )
 }

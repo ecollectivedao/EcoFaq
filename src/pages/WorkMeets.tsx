@@ -1,19 +1,22 @@
 import { SecondaryLayout } from 'layouts/SecondaryLayout'
 
 import { CallSchedule } from 'containers/CallSchedule/CallSchedule'
+import { Heading } from 'ui'
 
 export const WorkMeets = () => {
   return (
     <SecondaryLayout>
       <section className="block-primary">
-        <h2 className="block-primary__title">
-          Рабочие встречи
-        </h2>
-        <p className="block-primary__subtitle">Расписание созвонов с командой</p>
+        <Heading title='Рабочие встречи'>
+        Расписание созвонов с командой
+        </Heading>
 
         <CallSchedule/>
         <CallSchedule/>
         <CallSchedule/>
+        <CallSchedule/>
+        <CallSchedule/>
+        
       </section>
     </SecondaryLayout>
   )

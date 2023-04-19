@@ -1,6 +1,8 @@
+import { Li } from "ui"
+
 export const AmaItem = () => {
   return (
-    <div className="ama-item">
+    <Li>
       <p className="ama-item__title">
         Переводы от MikeWeb
       </p>
@@ -8,6 +10,6 @@ export const AmaItem = () => {
       <a href="https://docs.google.com/document/d/1bGBhwMZd0dt3d_sNQSidZFnh25z7DgX-oSHH6wzTlgI/edit?usp=sharing" className="block-primary__link">
         https://docs.google.com/document/d/1bGBhwMZd0dt3d_sNQSidZFnh25z7DgX-oSHH6wzTlgI/edit?usp=sharing
       </a>
-    </div>
+    </Li>
   )
 }

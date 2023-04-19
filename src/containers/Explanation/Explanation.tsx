@@ -1,3 +1,4 @@
+import { Paragraph } from 'ui'
 import './Explanation.scss'
 
 type ExplanationProps = {
@@ -7,8 +8,8 @@ type ExplanationProps = {
 
 export const Explanation = ({name, explain}: ExplanationProps) => {
     return (
-        <p className="block-primary__text">
+        <Paragraph>
             <strong>{name}</strong> - {explain}
-        </p>
+        </Paragraph>
     )
 }

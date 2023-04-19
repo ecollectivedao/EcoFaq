@@ -1,10 +1,11 @@
+import { Li } from "ui"
 
 
 export const UsefulLinksItem = () => {
     return (
-        <li className="block-primary__list-item">
+        <Li>
             <a href="" className="block-primary__link">Discord</a>
-        </li>
+        </Li>
     )
 }
 

@@ -7,6 +7,7 @@ export const QuestList = () => {
     <ul className="quest-list">
         <QuestItem/>
         <QuestItem/>
+        <QuestItem/>
     </ul>
   )
 }

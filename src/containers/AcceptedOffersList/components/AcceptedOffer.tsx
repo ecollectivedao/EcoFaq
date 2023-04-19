@@ -1,3 +1,5 @@
+import { Li } from "ui"
+
 type AcceptedOfferType = {
     text: string,
     link: string
@@ -5,10 +7,10 @@ type AcceptedOfferType = {
 
 export const AcceptedOffer = ({text, link}: AcceptedOfferType) => {
     return (
-        <li className="block-primary__list-item">
+        <Li>
             <a href={link} target='_blank' className="block-primary__link">
                 {text}
             </a>
-        </li>
+        </Li>
     )
 }
