@@ -130,7 +130,7 @@ const DesktopMenu = () => {
                 </motion.li>
             </Submenu>
 
-            <Submenu name='Archive'>
+            {/* <Submenu name='Archive'>
                 <motion.li className="submenu__item">
                     <Link to="#" className="submenu__link">RU</Link>
                 </motion.li>
@@ -146,7 +146,7 @@ const DesktopMenu = () => {
                 <motion.li className="submenu__item">
                     <Link to="#" className="submenu__link">JP</Link>
                 </motion.li>
-            </Submenu>
+            </Submenu> */}
 
 
 

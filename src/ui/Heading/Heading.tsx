@@ -2,6 +2,8 @@ import {motion} from 'framer-motion'
 
 import { titleAnimation, textAnimation } from 'config/animation'
 
+import './Heading.scss'
+
 type TitleProps = {
   title: string,
   children: React.ReactNode
@@ -22,7 +24,7 @@ export const Heading = ({title, children}: TitleProps) => {
         animate='visible'
         variants={textAnimation}
         custom={0.1}
-        className="news__subtitle">
+        className="heading__subtitle">
           {children}
           </motion.p>
     </>

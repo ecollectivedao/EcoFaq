@@ -1,7 +1,3 @@
-body {
-    background: #fffffb;
-}
-
 .container {
     max-width: 1140px;
     padding: 0 20px;
@@ -20,6 +16,10 @@ body {
     flex: 1 1 auto;
 }
 
+body {
+    transition: all 0.3s ease;
+}
+
 section {
     padding: 70px 0;
     border-bottom: 1px solid rgba(146,79,53,0.05);
@@ -29,7 +29,6 @@ section {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-
 }
 
 
@@ -47,8 +46,9 @@ section {
     }
 }
 
+
 .wrapper__gradient {
-    background: linear-gradient(-45deg, #dfdd86, #d5e7d7, #fffffb) ; 
+    background: var(--main-page-gradient);
     background-size: 400% 400%; 
     animation: change 10s ease-in-out infinite;
 }
@@ -115,10 +115,6 @@ section {
         color: var(--color-text);
         font-weight: 500;
     }
-    // &__img{
-    //     margin-top: 20px;
-    //     width: 100%!important;
-    // }
     &__gallery {
         color: var(--color-text2);
         font-size: 18px;
@@ -161,13 +157,6 @@ section {
         width: 50%!important;
         display: block;
     }
-    // &__link {
-    //     line-height: 1.5;
-    //     margin-top: 20px;
-    //     color: var(--color-active);
-    //     margin-bottom: 16px;
-    //     font-size: 18px;
-    // }
     &__mixed {
         display: flex;
         gap: 10px;
@@ -176,6 +165,7 @@ section {
     &__bold {
         font-size: 18px;
         font-weight: 500;
+        color: var(--color-text);
 
     }
 }

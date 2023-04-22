@@ -1,8 +1,32 @@
-:root {
+// :root {
+//     --color-text: #27292e;
+//     // --color-active: #924f35;
+//     --color-active: #924f34;
+//     --color-text2: #6d7079;
+//     --color-alter: rgba(249,249,245,0.75);
+//     --color-decor: rgba(21, 21, 21, 0.16);
+// }
+
+
+body[theme='dark'] {
+    background: #292929;
+
+    --color-text: #e0dfdf;
+    --color-active: #f0e79c;
+    --color-text2: #cccccc;
+    --color-alter: #3b3b3b75;
+    --color-decor: rgba(21, 21, 21, 0.16);
+    --main-page-gradient: linear-gradient(-45deg, #032374, #292929, #042f4a); 
+}
+
+body[theme='light'] {
+    background: #fffffb;
+
     --color-text: #27292e;
     // --color-active: #924f35;
     --color-active: #924f34;
     --color-text2: #6d7079;
     --color-alter: rgba(249,249,245,0.75);
     --color-decor: rgba(21, 21, 21, 0.16);
+    --main-page-gradient: linear-gradient(-45deg, #dfdd86, #d5e7d7, #fffffb); 
 }

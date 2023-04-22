@@ -1,17 +1,23 @@
 import {createSlice} from '@reduxjs/toolkit'
 
-type Profile = {
-    userName: string | null;
+type initialStateProps = {
+    theme: string
 }
 
-const initialState = {
-    userName: null
+const initialState: initialStateProps = {
+    theme: 'light'
 }
 
-const authSlice = createSlice({
-    name: 'auth',
+const themeSlice = createSlice({
+    name: 'theme',
     initialState,
     reducers: {
-
+        setupTheme: (state, action) => {
+            state.theme = action.payload
+        }
     }
 })
+
+
+export const { reducer: theme, actions: themeSetup } = themeSlice
+export const {setupTheme} = themeSetup

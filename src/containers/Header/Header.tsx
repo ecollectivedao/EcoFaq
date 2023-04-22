@@ -1,5 +1,9 @@
 import { Menu } from 'containers/Menu/Menu'
-import {Logo} from 'ui'
+import {ThemeSwitcher} from '../'
+import {Dropdown, Logo, Select} from 'ui'
+
+import ukraine from 'assets/img/Ukraine.png'
+
 
 import './Header.scss'
 
@@ -8,9 +12,10 @@ export const Header = () => {
        <header className='header'>
             <div className="header__container container">
                         <Logo/>
-                        {/* <BurgerMenu/> */}
                         <Menu/>
-                    <a className='header__btn'>Войти</a>
+        
+                        <ThemeSwitcher/>
+                    {/* <a className='header__btn'>Войти</a> */}
                 </div>
        </header>
     )

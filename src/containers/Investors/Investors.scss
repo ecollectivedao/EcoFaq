@@ -4,10 +4,13 @@
     font-size: 40px;
     margin-top: 15px;
     font-weight: 600;
+    color: var(--color-text)
     }
     &__subtitle {
         margin-top: 30px;
         font-size: 18px;
+        color: var(--color-text)
+
     }
     &__list {
         margin: 40px auto 0;
@@ -36,20 +39,11 @@
     &__item:hover .investors__link svg {
         transform: scale(1.18);
     }
-    &__link {
-        // transition: all 0.4s ease-out;
-        // // transform: translateY(80%);
-        // // opacity: 0;
-    }
-    // &__link.visible{
-    //     // transform: translateY(0);
-    //     // opacity: 1;
-    //     // animation: all 0.4s ease-out;
-    // }
     &__link svg{
         object-fit: contain;
         width: 70%;
         height: 70%;
         transition: 0.3s ease all;
+        fill: var(--color-text)
     }
 }

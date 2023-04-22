@@ -6,6 +6,7 @@
     justify-content: center;
     align-self: start;
     text-align: center;
+    color: var(--color-text);
 
     &__title {
         // font-size: 34px;
@@ -43,6 +44,7 @@
         // color: #e0de87;
         // color: #137204;
         color: #4a8f78;
+        // color: var(--color-active)
 
     }
 }
