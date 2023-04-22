@@ -1,16 +1,7 @@
-// :root {
-//     --color-text: #27292e;
-//     // --color-active: #924f35;
-//     --color-active: #924f34;
-//     --color-text2: #6d7079;
-//     --color-alter: rgba(249,249,245,0.75);
-//     --color-decor: rgba(21, 21, 21, 0.16);
-// }
-
-
 body[theme='dark'] {
     background: #292929;
 
+    --background: #292929;
     --color-text: #e0dfdf;
     --color-active: #f0e79c;
     --color-text2: #cccccc;
@@ -22,6 +13,7 @@ body[theme='dark'] {
 body[theme='light'] {
     background: #fffffb;
 
+    --background: #fffffb;
     --color-text: #27292e;
     // --color-active: #924f35;
     --color-active: #924f34;

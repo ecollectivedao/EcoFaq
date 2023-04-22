@@ -1,6 +1,6 @@
 import { Menu } from 'containers/Menu/Menu'
 import {ThemeSwitcher} from '../'
-import {Dropdown, Logo, Select} from 'ui'
+import {Dropdown, Logo} from 'ui'
 
 import ukraine from 'assets/img/Ukraine.png'
 
