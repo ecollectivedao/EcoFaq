@@ -1,7 +1,6 @@
 import {Switcher} from 'ui'
 import { setupTheme } from 'store/authSlice'
 import { AppDispatch } from 'store/store'
-import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 
 export const ThemeSwitcher = () => {

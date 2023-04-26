@@ -712,6 +712,7 @@ html {
         object-fit: contain;
         width: 100%;
         height: 100%;
+        animation: rotateImg 33s linear infinite;
     }
     &__img {
         margin-top: 20px;
@@ -755,5 +756,13 @@ html {
     }
     to {
         transform: translateY(-2000px);
+    }
+}
+@keyframes rotateImg {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }

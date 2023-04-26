@@ -2,6 +2,8 @@ import {motion} from 'framer-motion'
 
 import { imageReveal } from 'config/animation'
 
+import './Img.scss'
+
 
 type ImgProps = {
     src: string

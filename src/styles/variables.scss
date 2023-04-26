@@ -2,6 +2,7 @@ body[theme='dark'] {
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     background: #131b25;
 
+    --background: #292929;
     --color-text: #e0dfdf;
     --color-active: #f0e79c;
     --color-text2: #cccccc;
@@ -13,7 +14,7 @@ body[theme='dark'] {
 body[theme='light'] {
     background: #fffffb;
 
-
+    --background: #fffffb;
     --color-text: #27292e;
     --color-active: #924f34;
     --color-text2: #6d7079;
