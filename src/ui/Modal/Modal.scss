@@ -1,15 +1,20 @@
 .modal {
-    @media(max-width: 500px) {
-        max-width: 80vw;
+    // @media(max-width: 10px) {
+    //     max-width: 80vw;
+    // }
+    @media (max-width: 1340px) {
+        max-width: 80vw !important;
     }
-    max-width: 80vw;
+    
+    max-width: 1140px;
     width: 100%;
     max-height: 80vh;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #fffffb;
+    // background: #fffffb;
+    background: var(--background);
     color: var(--color-text);
     // border: 2px solid var(--border-color);
     border-radius: 8px;

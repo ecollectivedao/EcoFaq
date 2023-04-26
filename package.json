@@ -1,5 +1,5 @@
 {
-  "name": "ceo",
+  "name": "eco",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +11,7 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "css-doodle": "^0.34.9",
     "firebase": "^9.18.0",
     "framer-motion": "^10.10.0",
     "react": "^18.2.0",

@@ -3833,6 +3833,11 @@ css-declaration-sorter@^6.3.1:
   resolved "https://registry.yarnpkg.com/css-declaration-sorter/-/css-declaration-sorter-6.4.0.tgz#630618adc21724484b3e9505bce812def44000ad"
   integrity sha512-jDfsatwWMWN0MODAFuHszfjphEXfNw9JUAhmY4pLu3TyTU+ohUpsbVtbU+1MZn4a47D9kqh03i4eyOm+74+zew==
 
+css-doodle@^0.34.9:
+  version "0.34.9"
+  resolved "https://registry.yarnpkg.com/css-doodle/-/css-doodle-0.34.9.tgz#335b715d6684c0b79ed70c969d351692ef922ec8"
+  integrity sha512-vUtt0WrxLtLMgWW/l62dC0nuabKYWpWAG2biRXfQBXvDyRuARx1X9VobAOSA2f0mKjNpg0rOgtk+69Db6mLR7A==
+
 css-has-pseudo@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/css-has-pseudo/-/css-has-pseudo-3.0.4.tgz#57f6be91ca242d5c9020ee3e51bbb5b89fc7af73"
