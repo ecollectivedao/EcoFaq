@@ -17,6 +17,7 @@
     &__image {
         height: 600px;
         width: 40%;
+        z-index: 9;
         @media(max-width: 760px) {
             order: 2;
             width: 100%;
