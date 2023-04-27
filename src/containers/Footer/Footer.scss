@@ -3,6 +3,7 @@
     width: 100%;
     height: 100px;
     line-height: 1.3;
+    backdrop-filter: blur(8px);
     &__container {
         height: 100%;
         display: flex;

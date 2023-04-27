@@ -12,11 +12,10 @@ export const Footer = () => {
             <div className="footer__container container__body">
                 <div className="footer__logo">
                     <Logo/>
-                    {/* <h3 className="footer__title">ECO.com</h3> */}
                     <p className="footer__year">{`© ${new Date().getFullYear()} Eco`}</p>
                 </div>
                 <div className="footer__socials">
-                    <a href="#" target='_blank' className="footer__socials-item">
+                    <a href="https://discord.eco.org/" target='_blank' className="footer__socials-item">
 
                         <svg width="25px" height="25px" viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
                             <g>

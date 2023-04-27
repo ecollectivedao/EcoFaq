@@ -1,12 +1,14 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 import { Li, Modal } from 'ui'
 
-import trustee from 'assets/img/Annika_Says.png'
+import noAvatar from 'assets/img/noAvatar.png'
 
 import './TrusteeItem.scss'
+import { Trustee } from 'containers/TrusteeList/store/TrusteeSlice'
 
-export const TrusteeItem = () => {
+
+export const TrusteeItem = ({name, discord, info, linkedin, avatar}: Trustee) => {
   const [modalOpen, setModalOpen] = useState(false)
 
   const modalSwitcher = () => {
@@ -18,17 +20,15 @@ export const TrusteeItem = () => {
     <Li>
       <div onClick={modalSwitcher} className="trustee__item">
         <div className="trustee__avatar">
-          <img src={trustee} alt="trustee photo" className="trustee__photo" />
+          <img src={avatar ? avatar : noAvatar} alt="trustee photo" className="trustee__photo" />
         </div>
-        <p className="trustee__name">Annika Lewis</p>
+        <p className="trustee__name">{name}</p>
       </div>
       <Modal isOpen={modalOpen} modalSwitcher={modalSwitcher}>
-        <p className="trustee__name">Annika Lewis <span className="trustee__discord">(discord annika#0935)</span></p>
+        <p className="trustee__name">{name} <span className="trustee__discord">(discord {discord})</span></p>
         <a href='https://twitter.com/AnnikaSays' target='_blank' className="trustee__link">https://twitter.com/AnnikaSays</a>
         <p className="block-primary__text">
-          Анника  руководит грантами для Gitcoin, что позволяет ей быть в курсе всего лучшего, что происходит в криптосообществе. Ее опыт в области финансов и создания сообщества будет иметь первостепенное значение для хорошо функционирующей группы попечителей.
-          Я - новообращенный TradFi (10 лет в розничном и коммерческом банкинге, финтехе и венчурном капитале) и уже год занимаюсь криптовалютами. Мое "Почему ECO" довольно длинное ... так много интересного, так что вот сокращенная версия:
-          В 21 веке мы стали свидетелями того, как инновации бурно развиваются практически во всех сферах нашей жизни. Но есть одна область, которая осталась относительно нетронутой: деньги. Валюты, по большому счету, все еще полностью управляются национальными государствами - и в основном так же, как они управлялись с тех пор, как появились конные экипажи. Я заинтересовалaсь криптовалютами, потому что увиделa здесь проблески потенциала для перемен. Информационная эпоха дает нам инструменты, необходимые для создания новой - и улучшенной - денежной системы, которая будет работать со скоростью цифрового мира и удовлетворять потребности глобально подключенных избирателей. Это уже начинает происходить в Web3. И хотя я поддерживаю криптовалюты, я также вижу достоинства существующей глобальной финансовой системы. Она развилась до сегодняшнего состояния не без причин, и хотя я твердо убежденa, что есть место для большего, я не думаю, что валюты, поддерживаемые национальными государствами, исчезнут в ближайшее время. В целом, я считаю, что криптосообщество недооценивает многие достоинства существующей системы. Я в восторге от ECO, потому что он уникален тем, что стремится взять лучшее из обоих миров: фиата и криптовалют. Он черпает вдохновение в элементах традиционного центрального банкинга, которые были очень эффективны, и добавляет улучшения, ставшие возможными благодаря цифровым инструментам. Кроме того, что очень важно, он подчеркивает демократическое принятие решений снизу вверх, чтобы создать систему, которая будет работать для всех, а не только для тех, кто находится наверху.
+          {info}
         </p>
       </Modal>
     </Li>

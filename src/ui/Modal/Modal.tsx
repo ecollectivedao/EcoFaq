@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Backdrop } from '../Backdrop/Backdrop'
 import { Portal } from 'ui'
@@ -14,12 +14,10 @@ type ModalProps = {
 export const Modal = ({ children, modalSwitcher, isOpen }: ModalProps) => {
 
     useEffect(() => {
-        console.log(isOpen)
         if (isOpen) {
             (document.querySelector('body') as HTMLBodyElement).style.overflow = 'hidden'
         } else {
             (document.querySelector('body') as HTMLBodyElement).style.overflow = 'scroll'
-            console.log('wrind')
         }
     }, [isOpen])
 

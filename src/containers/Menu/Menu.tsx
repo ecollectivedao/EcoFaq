@@ -25,7 +25,6 @@ export const Menu = () => {
     const [desktopMenu, setDesktopMenu] = useState(true)
 
     const getWindowSize = () => {
-        console.log(window.innerWidth)
         if (window.innerWidth < 873) {
             setDesktopMenu(false)
         } else {
