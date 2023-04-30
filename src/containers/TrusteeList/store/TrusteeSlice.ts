@@ -6,16 +6,19 @@ export type Trustee = {
   discord?: string,
   info: string,
   name: string,
-  linkedin: string
-  avatar: string
+  linkedin?: string,
+  twitter?: string,
+  avatar?: string
 }
 
 type initialStateType = {
   trustee: Trustee[]
+  loading: boolean;
 }
 
 const initialState: initialStateType = {
-  trustee: []
+  trustee: [],
+  loading: false
 };
 
 
@@ -26,9 +29,18 @@ const trusteeSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder 
-      .addCase(getTrustee.pending, state => {state.trustee = []})
-      .addCase(getTrustee.fulfilled, (state, action) => {state.trustee = action.payload})
-      .addCase(getTrustee.rejected, (state) => {state.trustee = []})
+      .addCase(getTrustee.pending, state => {
+        // state.trustee = [],
+        state.loading = true
+      })
+      .addCase(getTrustee.fulfilled, (state, action) => {
+        state.trustee = action.payload
+        state.loading = false
+      })
+      .addCase(getTrustee.rejected, (state) => {
+        state.trustee = []
+        state.loading = false
+      })
   }
 })
 

@@ -8,7 +8,7 @@ import './TrusteeItem.scss'
 import { Trustee } from 'containers/TrusteeList/store/TrusteeSlice'
 
 
-export const TrusteeItem = ({name, discord, info, linkedin, avatar}: Trustee) => {
+export const TrusteeItem = ({name, discord, info, linkedin, twitter, avatar}: Trustee) => {
   const [modalOpen, setModalOpen] = useState(false)
 
   const modalSwitcher = () => {
@@ -26,7 +26,9 @@ export const TrusteeItem = ({name, discord, info, linkedin, avatar}: Trustee) =>
       </div>
       <Modal isOpen={modalOpen} modalSwitcher={modalSwitcher}>
         <p className="trustee__name">{name} <span className="trustee__discord">(discord {discord})</span></p>
-        <a href='https://twitter.com/AnnikaSays' target='_blank' className="trustee__link">https://twitter.com/AnnikaSays</a>
+        
+        {linkedin && <a href={linkedin} target='_blank' className="trustee__link">{linkedin}</a>}
+        {twitter && <a href={twitter} target='_blank' className="trustee__link">{twitter}</a>}
         <p className="block-primary__text">
           {info}
         </p>

@@ -6,28 +6,24 @@ import {getTrustee} from '../../store/TrusteeThunk'
 
 import './TrusteeList.scss'
 import { AppDispatch, RootState } from 'store/store'
+import { Loader } from 'ui'
 
 export const TrusteeList = () => {
 
   const dispatch = useDispatch<AppDispatch>()
-  const trustee = useSelector((state: RootState) => state.trusteeReducer.trustee)
+  const {trustee, loading} = useSelector((state: RootState) => state.trusteeReducer)
 
   useEffect(() => {
     dispatch(getTrustee())
   }, [])
 
-  console.log(trustee)
-  // useEffect(() => {
-  //       console.log(trustee)
-  // },[trustee])
-
     const view = trustee?.map(item => {
-      return <TrusteeItem avatar={item.avatar} name={item.name} discord={item.discord} linkedin={item.linkedin} info={item.info} key={item.name}/>
+      return <TrusteeItem avatar={item.avatar} name={item.name} discord={item.discord} twitter={item.twitter} linkedin={item.linkedin} info={item.info} key={item.name}/>
     })
 
   return (
     <ul className="trustee">
-        {view}
+        {loading ? <Loader/> : view}
     </ul>
   )
 }
