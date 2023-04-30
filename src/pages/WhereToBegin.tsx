@@ -1,41 +1,54 @@
-import {Link} from 'react-router-dom'
+import { Helmet } from "react-helmet"
 
 import { SecondaryLayout } from "layouts/SecondaryLayout"
-import { Heading, Li } from 'ui'
+import { H3, Heading, Li, Paragraph, Img } from 'ui'
 
-import image from 'assets/img/4.png'
+import events from 'assets/img/events_button.png'
 
 export const WhereToBegin = () => {
     return (
-        <SecondaryLayout>
+        <>
+            <Helmet>
+                <title>Первый шаг</title>
+                <meta name="description" content="Eco" />
+                <meta name="keywords" content="eco, crypto" />
+            </Helmet>
+            <SecondaryLayout>
+                <section className="block-primary">
+                    <Heading title='С чего начать'>
+                        Первый шаг
+                    </Heading>
 
-            <section className="block-primary">
-                <Heading title='С чего начать'>
-                    С чего начать?
-                </Heading>
+                    <Paragraph>
+                        С момента создания ЕСО комьюнити в марте 2021 года десятки тысяч членов сообщества работали вместе, чтобы создать нечто особенное. Они сделали это, потому что верят и хотят участвовать в миссии EСО, которая заключается в том, чтобы ваши деньги снова работали на вас.
+                    </Paragraph>
 
-                <ol className="block-primary__list-number">
-                    <Li >
-                        Для начала нам необходимо присоединиться к <a target='_blank' href="https://discord.eco.org/" className="block-primary__link">Дискорд ECO</a>
-                    </Li>
-                    <Li >
-                        Переходим в канал "rules-and-faqs" и ознакамливаемся с правилами и ответами на самые распространненые вопросы.
-                    </Li>
-                    <Li >
-                        Переходим в канал #start-here канал, под постом нажимаем на кнопку "Ready Layer 1". После этого у вас появится рольLayer 1
-                    </Li>
-                    <Li >
-                        Добро пожаловать в Дискорд ECO! Текущие Баунти можно найти в разделе CONTENT and BOUNTI и в разделе <Link to='/active-quests' className='block-primary__link'>Активные задания</Link>
+                    <Paragraph>
+                        После нескольких лет разработки, создания сообщества и продукта, валюта $ECO становится реальностью!
+                    </Paragraph>
 
-                        <img src={image} alt="" className="block-primary__img-sm" />
-                    </Li>
-                    <Li >
-                        С активными Proposals ты можешь ознакомится на <a target='_blank' href="https://forums.eco.org/" className="block-primary__link">ЕСО форуме</a> 
-                    </Li>
-                </ol>
+                    <H3>Лучший способ принять участие - это сразу же вступить в игру!</H3>
+                    <ol className="block-primary__list-number">
+                        <Li >
+                            Для начала нам необходимо присоединиться к <a target='_blank' href="https://discord.eco.org/" className="block-primary__link">Дискорд ECO</a>
+                        </Li>
+                        <Li >
+                            Переходим в канал "start-here" и Нажмите кнопку "Ready Layer 1", и вы в игре.
+                            Если вы хотите первым узнавать о событиях, челенджах нажмите кнопку "Events",<br />
+                            <Img src={events} />
+                        </Li>
+                        <Li >
+                            Переходим в канал "rules-and-faqs" и ознакамливаемся с правилами и ответами на самые распространненые вопросы.
+                        </Li>
+                        <Li >
+                            Вы в игре. Поздоровайтесь и представьтесь в канале #general. Задавайте вопросы. Делайте свой вклад  в ЕСО!
+                        </Li>
 
-            </section>
+                    </ol>
 
-        </SecondaryLayout>
+                </section>
+
+            </SecondaryLayout>
+        </>
     )
 }

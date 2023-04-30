@@ -1,10 +1,15 @@
 import { QuestList, TrusteeList } from 'containers'
 import { SecondaryLayout } from 'layouts/SecondaryLayout'
+import { Helmet } from 'react-helmet'
 import { H3, Heading } from 'ui'
 
 export const ActiveQuests = () => {
   return (
-    <SecondaryLayout>
+    <>
+     <Helmet>
+        <title>Активные задания</title>
+      </Helmet>
+      <SecondaryLayout>
             <section className="block-primary">
 
                 <Heading title='Активные задания'>
@@ -18,5 +23,6 @@ export const ActiveQuests = () => {
 
             </section>
     </SecondaryLayout>
+    </>
   )
 }

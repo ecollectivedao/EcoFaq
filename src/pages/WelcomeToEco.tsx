@@ -1,11 +1,22 @@
+import { Helmet } from "react-helmet"
+
 import { SecondaryLayout } from "layouts/SecondaryLayout"
-import {News2, News, NewsCenter} from 'containers'
+import { News } from 'containers'
+
 
 
 export const WelcomeToEco = () => {
     return (
-        <SecondaryLayout>
-                    <News/>
-        </SecondaryLayout>
+        <>
+            <Helmet>
+                <title>Welcome to Eco</title>
+                <meta name="description" content="Eco" />
+                <meta name="keywords" content="eco, crypto" />
+            </Helmet>
+            <SecondaryLayout>
+                <News />
+            </SecondaryLayout>
+        </>
+
     )
 }
