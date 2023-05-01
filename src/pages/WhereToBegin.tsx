@@ -4,8 +4,12 @@ import { SecondaryLayout } from "layouts/SecondaryLayout"
 import { H3, Heading, Li, Paragraph, Img } from 'ui'
 
 import events from 'assets/img/events_button.png'
+import { useEffect } from "react"
 
 export const WhereToBegin = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <>
             <Helmet>

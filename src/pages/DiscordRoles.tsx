@@ -23,6 +23,10 @@ export const DiscordRoles = () => {
         fetchData()
     }, [])
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     let keys: Array<string> = [];
     let values: Array<string> = []
     for (let key in roles) {

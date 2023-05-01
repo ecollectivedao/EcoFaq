@@ -4,8 +4,12 @@ import community from 'assets/img/community.png'
 import { A, H3, Heading, Li, Paragraph } from "ui"
 import { ImgBig } from "ui/ImgBig/ImgBig"
 import { Helmet } from "react-helmet"
+import { useEffect } from "react"
 
 export const CommunityManagment = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <>
             <Helmet>

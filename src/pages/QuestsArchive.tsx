@@ -1,9 +1,13 @@
 import { QuestItem } from 'containers/QuestList/components/QuestItem/QuestItem'
 import { SecondaryLayout } from 'layouts/SecondaryLayout'
+import { useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 import { H3, Heading } from 'ui'
 
 export const QuestsArchive = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+}, [])
   return (
     <>
       <Helmet>

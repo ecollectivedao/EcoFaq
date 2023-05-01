@@ -3,9 +3,13 @@ import { Helmet } from "react-helmet"
 
 import { SecondaryLayout } from "layouts/SecondaryLayout"
 import { A, H3, Heading, Li, Paragraph } from "ui"
+import { useEffect } from "react"
 
 
 export const TokensClaim2 = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+}, [])
   return (
     <>
       <Helmet>

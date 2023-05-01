@@ -1,9 +1,13 @@
 import { SecondaryLayout } from "layouts/SecondaryLayout"
+import { useEffect } from "react"
 import { Helmet } from "react-helmet"
 import { A, H3, Heading, Paragraph } from "ui"
 import { H4 } from "ui/H4/H4"
 
 export const Discord = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
 
         <>

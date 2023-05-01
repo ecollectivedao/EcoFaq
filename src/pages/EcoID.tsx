@@ -1,9 +1,13 @@
 import { SecondaryLayout } from "layouts/SecondaryLayout"
+import { useEffect } from "react"
 import { Helmet } from "react-helmet"
 import { A, H3, Heading, Li, Paragraph } from "ui"
 
 
 export const EcoID = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <>
             <Helmet>

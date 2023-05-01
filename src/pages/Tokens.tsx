@@ -5,8 +5,12 @@ import formule from 'assets/img/formule.png'
 import eco from 'assets/img/ECO.png'
 import ecoX from 'assets/img/ECOx.png'
 import { Helmet } from "react-helmet"
+import { useEffect } from "react"
 
 export const Tokens = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <>
             <Helmet>
@@ -67,9 +71,9 @@ export const Tokens = () => {
                         <strong>βi</strong> = Первоначальное количество ECOx при лаунче
                     </Paragraph>
                     <H3>Доступные Биржи</H3>
-                    <A link='https://www.kucoin.com/'>Kucoin</A>
-                    <A link='https://www.gate.io/'>Gate.io</A>
-                    <A link='https://www.bybit.com/'>Bybit</A>
+                    <A link='https://www.kucoin.com/'>Kucoin</A><br/>
+                    <A link='https://www.gate.io/'>Gate.io</A><br/>
+                    <A link='https://www.bybit.com/'>Bybit</A><br/>
                 </section>
 
             </SecondaryLayout>

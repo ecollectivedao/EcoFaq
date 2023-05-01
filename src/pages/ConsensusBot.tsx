@@ -1,8 +1,13 @@
 import { SecondaryLayout } from "layouts/SecondaryLayout"
+import { useEffect } from "react"
 import { Helmet } from "react-helmet"
 import { Heading, Paragraph, H3 } from "ui"
 
 export const ConsensusBot = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+    
     return (
         <>
             <Helmet>

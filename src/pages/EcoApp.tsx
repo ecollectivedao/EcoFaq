@@ -1,7 +1,11 @@
 import { SecondaryLayout } from 'layouts/SecondaryLayout'
+import { useEffect } from 'react'
 import { H3, Heading, Paragraph } from 'ui'
 
 export const EcoApp = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <SecondaryLayout>
             <section className="block-primary">

@@ -3,9 +3,12 @@ import { Helmet } from 'react-helmet'
 import { UsefulLinksList } from 'containers/UsefulLinksList/UsefulLinksList'
 import { SecondaryLayout } from 'layouts/SecondaryLayout'
 import { Heading } from 'ui'
+import { useEffect } from 'react'
 
 export const UsefulLinks = () => {
-
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <>
             <Helmet>

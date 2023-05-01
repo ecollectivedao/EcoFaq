@@ -3,8 +3,12 @@ import { Helmet } from 'react-helmet'
 import { SecondaryLayout } from 'layouts/SecondaryLayout'
 import { TrusteeList } from 'containers'
 import { Heading } from 'ui'
+import { useEffect } from 'react'
 
 export const Trustee = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+}, [])
   return (
     <>
       <Helmet>

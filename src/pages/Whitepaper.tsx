@@ -1,8 +1,12 @@
 import { SecondaryLayout } from "layouts/SecondaryLayout"
+import { useEffect } from "react"
 import { H3, Heading, Paragraph, Subtitle } from "ui"
 import { H4 } from "ui/H4/H4"
 
 export const Whitepaper = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+}, [])
   return (
     <SecondaryLayout>
       <section className="block-primary">

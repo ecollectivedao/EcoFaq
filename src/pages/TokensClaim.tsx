@@ -5,9 +5,13 @@ import ecoInstructions from 'assets/img/eco_instructions.png'
 import { A, Heading, Li, Paragraph } from "ui"
 import { ImgBig } from "ui/ImgBig/ImgBig"
 import { Link } from "react-router-dom"
+import { useEffect } from "react"
 
 
 export const TokensClaim = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <>
             <Helmet>

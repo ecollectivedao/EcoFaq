@@ -1,10 +1,14 @@
 
 import AmaList from "containers/AmaList/components/AmaList"
 import { SecondaryLayout } from "layouts/SecondaryLayout"
+import { useEffect } from "react"
 import { Helmet } from "react-helmet"
 import { Heading } from "ui"
 
 export const AmaRecords = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+}, [])
   return (
     <>
       <Helmet>

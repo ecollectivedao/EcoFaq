@@ -1,9 +1,13 @@
 import { SecondaryLayout } from "layouts/SecondaryLayout"
+import { useEffect } from "react"
 import { Helmet } from "react-helmet"
 import { Link } from "react-router-dom"
 import { Heading, Paragraph } from "ui"
 
 export const EcoManagment = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <>
             <Helmet>

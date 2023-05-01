@@ -1,8 +1,12 @@
 import { SecondaryLayout } from 'layouts/SecondaryLayout'
+import { useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 import { Heading, Paragraph } from 'ui'
 
 export const Ecollective = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <>
             <Helmet>

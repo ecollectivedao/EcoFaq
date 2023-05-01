@@ -2,10 +2,14 @@ import { Helmet } from "react-helmet"
 
 import { SecondaryLayout } from "layouts/SecondaryLayout"
 import { News } from 'containers'
+import { useEffect } from "react"
 
 
 
 export const WelcomeToEco = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <>
             <Helmet>
