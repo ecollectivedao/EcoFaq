@@ -1,8 +1,23 @@
 .logo {
     width: 120px;
-    height: 25px;
+    height: max-content;
     flex: 0 0 auto;
     margin-right: -40px;
+
+    &__link {
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        text-decoration: none;
+        color: var(--color-text);
+        transition: all 0.3s ease;
+    }
+    svg {
+        margin-right: -20px
+    };
+    &:hover .logo__link {
+        color: var(--color-active);
+    }
 }
 
 .logo a svg path {

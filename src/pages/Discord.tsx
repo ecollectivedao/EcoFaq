@@ -126,6 +126,7 @@ export const Discord = () => {
                     <Paragraph><strong>Eco App</strong> - этот канал предназначен для обсуждения одного из первых продуктов, созданных на основе системы Eco Currency — Eco App.</Paragraph>
                     <Paragraph><strong>Eco Id</strong> - Этот канал предназначен для обсуждения одного из первых продуктов, созданных на основе (и поддерживающих) систему эковалюты — Eco ID.</Paragraph>
                     <Paragraph><strong>dashboards and data</strong> - Этот канал предназначен для обсуждения информационных панелей и данных, созданных на основе протокола Eco — ECO и ECOx.</Paragraph>
+                    <Paragraph><strong>Ecogeneration-art-auction</strong> - страница где проходят аукционы за работы, написанные детьми.</Paragraph>
 
 
 

@@ -15,7 +15,6 @@ export const DiscordRoles = () => {
         const fetchData = async () => {
             const docRef = doc(db, "discord", "discord-roles");
             const docSnap = await getDoc(docRef);
-
             if (docSnap.exists()) {
                 setRoles(docSnap.data())
             }
@@ -54,6 +53,13 @@ export const DiscordRoles = () => {
                     <Heading title='DISCORD Роли'>
                         Описание ролей в Discord
                     </Heading>
+                    <Explanation
+                        name={'Moderator'}
+                        explain='Члены сообщества, получившие эту роль, согласились отвечать за ведение сервера Discord и выполнять следующие обязанности:'
+                        subItems={['Отвечать на вопросы новых членов сообщества и помогать им найти ответы на интересующие их вопросы, направляя их к соответствующим ресурсам',
+                            'Модерирование дискуссий и обеспечение соблюдения правил сообщества.'
+                        ]}
+                    />
                     {view}
                 </section>
             </SecondaryLayout>

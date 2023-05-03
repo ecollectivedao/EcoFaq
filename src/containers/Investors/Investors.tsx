@@ -26,8 +26,9 @@ export const Investors = () => {
 					viewport={{ amount: 0.6 }}
 					className="investors__item">
 					<motion.a
+						target='_blank'
 						variants={investorsAnimation}
-						href="" 
+						href="https://a16z.com/" 
 						className="investors__link">
 
 						<svg version="1.1" id="_x30_0" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -102,8 +103,9 @@ export const Investors = () => {
 				viewport={{ amount: 0.6 }}
 				className="investors__item">
 					<motion.a
+						target='_blank'
 						variants={investorsAnimation}
-						href=""
+						href="https://foundersfund.com/"
 						className="investors__link">
 
 						<svg version="1.1" id="_x30_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -174,7 +176,8 @@ export const Investors = () => {
 				viewport={{ amount: 0.6 }}
 				className="investors__item">
 					<motion.a
-					variants={investorsAnimation} href="" className="investors__link">
+					target='_blank'
+					variants={investorsAnimation} href="https://slow-prod.herokuapp.com/" className="investors__link">
 
 						<svg version="1.1" id="_x30_2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							viewBox="0 0 224 64"
@@ -217,7 +220,8 @@ export const Investors = () => {
 				viewport={{ amount: 0.6 }}
 				className="investors__item">
 					<motion.a variants={investorsAnimation}
-					href="" 
+					href="https://tribecap.co/" 
+					target='_blank'
 					className="investors__link">
 
 						<svg version="1.1" id="_x30_3" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -336,7 +340,9 @@ export const Investors = () => {
 				className="investors__item">
 					<motion.a 
 					variants={investorsAnimation}
-					href="" className="investors__link">
+					href="https://www.lcatterton.com/" 
+					target='_blank'
+					className="investors__link">
 						<svg version="1.1" id="_x30_4" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							viewBox="0 0 224 64" xmlSpace="preserve">
 							<style type="text/css">
@@ -398,7 +404,9 @@ export const Investors = () => {
 				viewport={{ amount: 0.6 }}
 				className="investors__item">
 					<motion.a variants={investorsAnimation}
-					href="" className="investors__link">
+					href="https://www.activantcapital.com/" 
+					target='_blank'
+					className="investors__link">
 
 						<svg version="1.1" id="_x30_5" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							viewBox="0 0 224 64" xmlSpace="preserve">
@@ -437,7 +445,9 @@ export const Investors = () => {
 				className="investors__item">
 					<motion.a 
 					variants={investorsAnimation}
-					href="" className="investors__link">
+					href="https://valorcapitalgroup.com/" 
+					target='_blank'
+					className="investors__link">
 
 						<svg version="1.1" id="_x30_6" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							viewBox="0 0 224 64" xmlSpace="preserve">
@@ -476,7 +486,9 @@ export const Investors = () => {
 				className="investors__item">
 					<motion.a 
 					variants={investorsAnimation}
-					href="" className="investors__link">
+					href="https://accessventures.org/"
+					target='_blank'
+					className="investors__link">
 						<svg version="1.1" id="_x30_7" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							viewBox="0 0 224 64" xmlSpace="preserve">
 							<style type="text/css">
@@ -547,7 +559,9 @@ export const Investors = () => {
 				className="investors__item">
 					<motion.a 
 					variants={investorsAnimation}
-					href="" className="investors__link">
+					href="https://www.coinbase.com/fr/ventures"
+					target='_blank'
+					className="investors__link">
 
 						<svg version="1.1" id="_x30_8" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							viewBox="0 0 224 64" xmlSpace="preserve">
@@ -617,7 +631,9 @@ export const Investors = () => {
 				className="investors__item">
 					<motion.a 
 					variants={investorsAnimation}
-					href="" className="investors__link">
+					href="https://www.expa.com/"
+					target='_blank'
+					className="investors__link">
 
 						<svg version="1.1" id="_x30_9" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							viewBox="0 0 224 64" xmlSpace="preserve">
@@ -733,7 +749,9 @@ export const Investors = () => {
 				className="investors__item">
 					<motion.a 
 					variants={investorsAnimation}
-					href="" className="investors__link">
+					href="https://nbb5xuegyvfcezjcebb5wk7l7lgigsl2x52wx3zwbhjiqjc2lw2a.arweave.net/aEPb0IbFSiJlIiBD2yvr-syDSXq_dWvvNgnSiCRaXbQ"
+					target='_blank'
+					className="investors__link">
 						<svg version="1.1" id="_x31_0" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							viewBox="0 0 224 64" xmlSpace="preserve">
 							<style type="text/css">
@@ -758,7 +776,9 @@ export const Investors = () => {
 				viewport={{ amount: 0.6 }}
 				className="investors__item">
 					<motion.a variants={investorsAnimation}
-					href="" className="investors__link">
+					href="https://www.collabcurrency.com/"
+					target='_blank'
+					className="investors__link">
 
 						<svg version="1.1" id="_x31_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							viewBox="0 0 224 64" xmlSpace="preserve">
@@ -917,7 +937,9 @@ export const Investors = () => {
 				viewport={{ amount: 0.6 }}
 				className="investors__item">
 					<motion.a variants={investorsAnimation}
-					href="" className="investors__link">
+					href="https://lsvp.com/" 
+					target='_blank'
+					className="investors__link">
 						<svg version="1.1" id="_x31_2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							viewBox="0 0 224 64" xmlSpace="preserve">
 							<style type="text/css">
@@ -999,7 +1021,9 @@ export const Investors = () => {
 				viewport={{ amount: 0.6 }}
 				className="investors__item">
 					<motion.a variants={investorsAnimation}
-					href="" className="investors__link">
+					href="https://panteracapital.com/"
+					target='_blank' 
+					className="investors__link">
 
 						<svg version="1.1" id="_x31_3" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							viewBox="0 0 224 64" xmlSpace="preserve">
@@ -1035,7 +1059,9 @@ export const Investors = () => {
 				viewport={{ amount: 0.6 }}
 				className="investors__item">
 					<motion.a variants={investorsAnimation}
-					href="" className="investors__link">
+					href="https://www.valorep.com/"
+					target='_blank'
+					className="investors__link">
 
 						<svg version="1.1" id="_x31_4" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							viewBox="0 0 224 64" xmlSpace="preserve">
@@ -1095,7 +1121,9 @@ export const Investors = () => {
 				className="investors__item">
 					<motion.a 
 					variants={investorsAnimation}
-					href="" className="investors__link">
+					href="https://liontree.com/"
+					target='_blank'
+					className="investors__link">
 
 						<svg version="1.1" id="_x31_5" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							viewBox="0 0 224 64" xmlSpace="preserve">

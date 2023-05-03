@@ -3,7 +3,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 20px;
+    gap: 40px;
+    row-gap: 90px;
     @media(max-width: 459px) {
         justify-content: center;
 

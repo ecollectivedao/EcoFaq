@@ -32,9 +32,9 @@ export const CommunityManagment = () => {
                         Управление сообществом происходит в соответствии со сроками генерации системы и разбито на три фазы:
                     </Paragraph>
 
-                    <ul className="primary-block__list">
+                    <ul className="block-primary__list">
                         <Li>
-                            фаза подачи предложения на Форуме;
+                            фаза подачи предложения на <A link="https://forums.eco.org/">Форуме</A>;
                         </Li>
                         <Li>
                             фаза предложения/поддержки;

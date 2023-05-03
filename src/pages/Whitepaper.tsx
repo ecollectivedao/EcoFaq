@@ -12,7 +12,7 @@ export const Whitepaper = () => {
       <section className="block-primary">
 
         <Heading title='Whitepaper'>
-        Нужно придумать заголовок
+            Whitepaper
         </Heading>
         <H3>
           Оригинал документа <a href="https://eco.org/whitepaper.pdf">https://eco.org/whitepaper.pdf</a>
