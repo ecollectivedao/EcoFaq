@@ -11,6 +11,7 @@ import { H3 } from 'ui/H3/H3'
 import { Link } from 'react-router-dom'
 
 export const News = () => {
+    
     return (
         <section
             className="news">
@@ -30,8 +31,8 @@ export const News = () => {
                     </div>
                     <motion.div
                         className="news__info">
-                        <Heading title='Что такое Eco?'>
-                            Это - неофициальный гайд
+                        <Heading title='Welcome to Eco'>
+                           Что такое Eco?
                         </Heading>
                     
                         <Paragraph>Eco - это децентрализованная валюта, позволяющая создать экономику нового типа, которая работает более прозрачно и в наших коллективных интересах.

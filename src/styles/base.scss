@@ -709,7 +709,6 @@ li img {
         }
     }
     &__gallery-item{
-        word-break: break-all;
         margin: 0 auto;
         margin-top: 70px;
         flex: 0 0 50%;
@@ -791,4 +790,8 @@ li a {
     to {
         transform: rotate(360deg);
     }
+}
+
+.token__id {
+   word-break: break-all;
 }

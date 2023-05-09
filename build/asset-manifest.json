@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4a9903c0.css",
+    "main.js": "/static/js/main.1f44b5c1.js",
+    "static/media/coins.png": "/static/media/coins.7217ebd80b11b6d386f5.png",
+    "static/media/eco_instructions.png": "/static/media/eco_instructions.be54dbfe1f9a0c178455.png",
+    "static/media/ECOx.png": "/static/media/ECOx.17cb3bea7d95951ec781.png",
+    "static/media/Rubik-Medium.ttf": "/static/media/Rubik-Medium.115acab02aed19275f71.ttf",
+    "static/media/Rubik-SemiBold.ttf": "/static/media/Rubik-SemiBold.1997afa48cd24468abb6.ttf",
+    "static/media/Rubik-Bold.ttf": "/static/media/Rubik-Bold.433b599535e1d929aaf8.ttf",
+    "static/media/Rubik-Regular.ttf": "/static/media/Rubik-Regular.f887c9f4ac165f5e1912.ttf",
+    "static/media/Rubik-Light.ttf": "/static/media/Rubik-Light.44b62d60249f23b2bf50.ttf",
+    "static/media/ECO.png": "/static/media/ECO.1eab6385b155fb5c932c.png",
+    "static/media/community.png": "/static/media/community.3a74099c68aef1973092.png",
+    "static/media/formule.png": "/static/media/formule.305164c07c8e36e8dc03.png",
+    "index.html": "/index.html",
+    "main.4a9903c0.css.map": "/static/css/main.4a9903c0.css.map",
+    "main.1f44b5c1.js.map": "/static/js/main.1f44b5c1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a9903c0.css",
+    "static/js/main.1f44b5c1.js"
+  ]
+}

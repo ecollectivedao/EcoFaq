@@ -2,20 +2,30 @@ import { Logo } from 'ui'
 
 import './Footer.scss'
 
-import inst from 'assets/img/inst.png'
+import { useEffect, useState } from 'react'
+import { DocumentData, doc, getDoc } from 'firebase/firestore'
+import { db } from 'config/firebaseConfig'
 
 export const Footer = () => {
+    const [links, setLinks] = useState<DocumentData>()
 
+    useEffect(() => {
+        const getLinks = async () => {
+            const docRef = doc(db, "socials", "links");
+            const docSnap = await getDoc(docRef);
+            setLinks(docSnap.data())
+        }
+        getLinks()
+    }, [])
 
     return (
         <footer className="footer">
             <div className="footer__container container__body">
                 <div className="footer__logo">
                     <Logo />
-                    <p className="footer__year">{`© ${new Date().getFullYear()} Eco`}</p>
                 </div>
                 <div className="footer__socials">
-                    <a href="https://discord.eco.org/" target='_blank' className="footer__socials-item">
+                    <a href={links?.discord} target='_blank' className="footer__socials-item">
 
                         <svg width="25px" height="25px" viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
                             <g>
@@ -25,13 +35,13 @@ export const Footer = () => {
                         </svg>
                     </a>
 
-                    <a href="https://twitter.com/Eco" target='_blank' className="footer__socials-item">
+                    <a href={links?.twitter} target='_blank' className="footer__socials-item">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" viewBox="0 0 248 204" width="25px" height="25px">
                             <path fill="#1d9bf0" d="M221.95 51.29c.15 2.17.15 4.34.15 6.53 0 66.73-50.8 143.69-143.69 143.69v-.04c-27.44.04-54.31-7.82-77.41-22.64 3.99.48 8 .72 12.02.73 22.74.02 44.83-7.61 62.72-21.66-21.61-.41-40.56-14.5-47.18-35.07 7.57 1.46 15.37 1.16 22.8-.87-23.56-4.76-40.51-25.46-40.51-49.5v-.64c7.02 3.91 14.88 6.08 22.92 6.32C11.58 63.31 4.74 33.79 18.14 10.71c25.64 31.55 63.47 50.73 104.08 52.76-4.07-17.54 1.49-35.92 14.61-48.25 20.34-19.12 52.33-18.14 71.45 2.19 11.31-2.23 22.15-6.38 32.07-12.26-3.77 11.69-11.66 21.62-22.2 27.93 10.01-1.18 19.79-3.86 29-7.95-6.78 10.16-15.32 19.01-25.2 26.16z" />
                         </svg>
                     </a>
-
-                    <a href="https://forums.eco.org/" target='_blank' className="footer__socials-item">
+                    
+                    <a href={links?.forum} target='_blank' className="footer__socials-item">
                         <svg fill="var(--color-active)" height="25px" width="25px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
                             viewBox="0 0 484.366 484.366" xmlSpace="preserve">
                             <g>
