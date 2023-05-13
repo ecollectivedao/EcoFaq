@@ -21,12 +21,12 @@ export const Tokens = () => {
             <SecondaryLayout>
 
                 <section className="block-primary">
-                    <Heading title='Tokens'>
+                    <Heading title='Токены'>
                         Какие есть токены?
                     </Heading>
 
                     <H3>
-                        В системе Eco Currency существует два токена
+                        В системе Eco валюты существует два токена
                     </H3>
 
                     <ul className="block-primary__gallery">
@@ -52,6 +52,9 @@ export const Tokens = () => {
                             <Paragraph>Вторичный актив для обеспечения надежного управления и поддержки ответственного роста. Он имеет ограниченное предложение, которое может только уменьшаться со временем. Общий саплай 1 миллиард ECOx. Каждая единица ECOx может быть конвертироваться в ЭКО в любое время по защищенному от инфляции курсу (т.е. каждая единица ECOx представляет собой процент от предложения ECO), и в конечном итоге ECOx может получать выгоду от комиссионных за транзакции в ECO. ECOx может быть конвертироваться в ECO только при одностороннем, необратимом обмене.</Paragraph>
                             <Paragraph>
                                 Aдрес контракта: <br /><strong className='token__id'>0xcccD1Ba9f7acD6117834E0D28F25645dECb1736a</strong>
+                            </Paragraph>
+                            <Paragraph>
+                                Доступные биржи: <A link="https://uniswap.org/">https://uniswap.org/</A>
                             </Paragraph>
                         </li>
                     </ul>

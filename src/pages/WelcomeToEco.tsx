@@ -13,7 +13,7 @@ export const WelcomeToEco = () => {
     return (
         <>
             <Helmet>
-                <title>Welcome to Eco</title>
+                <title>Добро пожаловать в ECO</title>
                 <meta name="description" content="Eco" />
                 <meta name="keywords" content="eco, crypto" />
             </Helmet>

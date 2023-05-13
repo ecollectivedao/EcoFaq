@@ -15,13 +15,13 @@ export const TokensClaim = () => {
     return (
         <>
             <Helmet>
-                <title>Claim токенов</title>
+                <title>Клеймение токенов</title>
                 <meta name="description" content="Eco" />
                 <meta name="keywords" content="eco, crypto" />
             </Helmet>
             <SecondaryLayout>
                 <section className="block-primary">
-                    <Heading title='Claim токенов'>
+                    <Heading title='Клеймение токенов'>
                         Как заклеймить свои токены?
                     </Heading>
 

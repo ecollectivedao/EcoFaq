@@ -31,7 +31,7 @@ export const News = () => {
                     </div>
                     <motion.div
                         className="news__info">
-                        <Heading title='Welcome to Eco'>
+                        <Heading title='Добро пожаловать в ECO'>
                            Что такое Eco?
                         </Heading>
                     

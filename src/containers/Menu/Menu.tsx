@@ -57,17 +57,17 @@ const DesktopMenu = () => {
 
     return (
         <motion.ul className='menu__list'>
-            <Link to='/welcome' className="submenu__link">Welcome to ECO</Link>
+            <Link to='/welcome' className="submenu__link">Добро пожаловать в ECO</Link>
 
             <Submenu name='FAQ'>
                 <motion.li className="submenu__item">
                     <Link to='/where-to-begin' className="submenu__link">Первый шаг</Link>
                 </motion.li>
                 <motion.li className="submenu__item">
-                    <Link to="/tokens" className="submenu__link">Tokens</Link>
+                    <Link to="/tokens" className="submenu__link">Токены</Link>
                 </motion.li>
                 <motion.li className="submenu__item">
-                    <Link to="/tokens-claim" className="submenu__link">Claim токенов</Link>
+                    <Link to="/tokens-claim" className="submenu__link">Клеймение токенов</Link>
                 </motion.li>
                 <motion.li className="submenu__item">
                     <Link to="/eco-id" className="submenu__link">Eco ID</Link>
@@ -76,7 +76,7 @@ const DesktopMenu = () => {
                     <Link to="/discord" className="submenu__link">Дискорд</Link>
                 </motion.li>
                 <motion.li className="submenu__item">
-                    <Link to="/discord-roles" className="submenu__link">Описание ролей в Discord</Link>
+                    <Link to="/discord-roles" className="submenu__link">Описание ролей в дискорде</Link>
                 </motion.li>
                 <motion.li className="submenu__item">
                     <Link to="/ecollective" className="submenu__link">Ecollective</Link>
@@ -88,7 +88,7 @@ const DesktopMenu = () => {
                     <Link to="/seasons-eco" className="submenu__link">Сезоны ECO</Link>
                 </motion.li>
                 <motion.li className="submenu__item">
-                    <Link to="/tokens-claim2" className="submenu__link">Claim токенов второй фазы</Link>
+                    <Link to="/tokens-claim2" className="submenu__link">Клеймение токенов второй фазы</Link>
                 </motion.li>
                 <motion.li className="submenu__item">
                     <Link to="/layer-3" className="submenu__link">Layer 3</Link>
@@ -107,7 +107,7 @@ const DesktopMenu = () => {
                 </motion.li>
             </Submenu>
 
-            <Submenu name='Governance'>
+            <Submenu name='Управление'>
                 <motion.li className="submenu__item">
                     <Link to="/monetary-policy" className="submenu__link">Монетарная политика</Link>
                 </motion.li>
@@ -115,7 +115,7 @@ const DesktopMenu = () => {
                     <Link to="/eco-managment" className="submenu__link">Управление ECO</Link>
                 </motion.li>
                 <motion.li className="submenu__item">
-                    <Link to="/community-managment" className="submenu__link">Community governance</Link>
+                    <Link to="/community-managment" className="submenu__link">Управление сообществом</Link>
                 </motion.li>
                 {/* <motion.li className="submenu__item">
                     <Link to="/offers-and-votes" className="submenu__link">Подача редложений и голосование</Link>
@@ -124,7 +124,7 @@ const DesktopMenu = () => {
                     <Link to="/work-meets" className="submenu__link">Рабочие встречи</Link>
                 </motion.li> */}
                 <motion.li className="submenu__item">
-                    <Link to="/trustee" className="submenu__link">Trustee</Link>
+                    <Link to="/trustee" className="submenu__link">Доверительные управляющие</Link>
                 </motion.li>
             </Submenu>
 
@@ -210,7 +210,7 @@ const BurgerMenu = () => {
                             viewport={{ amount: 0.6, once: true }}>
                             <motion.li className="burger-menu__item"
                                 variants={investorsAnimation}>
-                                <Link to="/welcome" className="burger-menu__link">Welcome to ECO</Link>
+                                <Link to="/welcome" className="burger-menu__link">Добро пожаловать в ECO</Link>
                             </motion.li>
                         </motion.ul>
                         <motion.h3
@@ -238,12 +238,12 @@ const BurgerMenu = () => {
                             <motion.li className="burger-menu__item"
                                 variants={investorsAnimation}
                                 custom={0.2}>
-                                <Link to="/tokens" className="burger-menu__link">Tokens</Link>
+                                <Link to="/tokens" className="burger-menu__link">Токены</Link>
                             </motion.li>
                             <motion.li className="burger-menu__item"
                                 variants={investorsAnimation}
                                 custom={0.25}>
-                                <Link to="/tokens-claim" className="burger-menu__link">Claim токенов</Link>
+                                <Link to="/tokens-claim" className="burger-menu__link">Клеймение токенов</Link>
                             </motion.li>
                             <motion.li className="burger-menu__item"
                                 variants={investorsAnimation}
@@ -258,7 +258,7 @@ const BurgerMenu = () => {
                             <motion.li className="burger-menu__item"
                                 variants={investorsAnimation}
                                 custom={0.4}>
-                                <Link to="/discord-roles" className="burger-menu__link">Описание ролей в Discord</Link>
+                                <Link to="/discord-roles" className="burger-menu__link">Описание ролей в дискорде</Link>
                             </motion.li>
                             <motion.li className="burger-menu__item"
                                 variants={investorsAnimation}
@@ -294,7 +294,7 @@ const BurgerMenu = () => {
                                 variants={investorsAnimation}
                                 custom={0.65}
                                 className="burger-menu__item">
-                                <Link to="/tokens-claim2" className="burger-menu__link">Claim токенов второй фазы</Link>
+                                <Link to="/tokens-claim2" className="burger-menu__link">Клеймение токенов второй фазы</Link>
                             </motion.li>
                             <motion.li
                                 variants={investorsAnimation}
@@ -345,7 +345,7 @@ const BurgerMenu = () => {
                             viewport={{ amount: 0.6, once: true }}
                             variants={investorsAnimation}
                             custom={0.95}
-                            className="burger-menu__title">Governance</motion.h3>
+                            className="burger-menu__title">Управление</motion.h3>
                         <motion.ul className="burger-menu__category"
                             initial='hidden'
                             animate='visible'
@@ -366,13 +366,13 @@ const BurgerMenu = () => {
                                 variants={investorsAnimation}
                                 custom={1.1}
                                 className="burger-menu__item">
-                                <Link to="/community-managment" className="burger-menu__link">Community governance</Link>
+                                <Link to="/community-managment" className="burger-menu__link">Управление сообществом</Link>
                             </motion.li>
                             <motion.li
                                 variants={investorsAnimation}
                                 custom={1.15}
                                 className="burger-menu__item">
-                                <Link to="/trustee" className="burger-menu__link">Trustee</Link>
+                                <Link to="/trustee" className="burger-menu__link">Доверительные руководители</Link>
                             </motion.li>
                         </motion.ul>
 

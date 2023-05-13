@@ -12,15 +12,15 @@ export const Trustee = () => {
   return (
     <>
       <Helmet>
-        <title>Trustee</title>
+        <title>Управляющие</title>
         <meta name="description" content="Eco" />
         <meta name="keywords" content="eco, crypto" />
       </Helmet>
       <SecondaryLayout>
         <section className="block-primary">
 
-          <Heading title='Trustee'>
-            Участники trustee и их краткое интро
+          <Heading title='Управляющие'>
+            Управляющие и их краткое интро
           </Heading>
 
           <TrusteeList />

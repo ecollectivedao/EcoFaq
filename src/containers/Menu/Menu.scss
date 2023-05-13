@@ -128,7 +128,6 @@
         text-decoration: none;
         color: inherit;
         color: var(--color-text);
-        font-size: 20px;
         position: relative;
     }
     &__link::after{
@@ -187,6 +186,7 @@
         display: flex;
         justify-content: center;
         gap: 30px;
+        font-size: 14px;
     }
     &__list-item {
         text-decoration: none;
@@ -205,7 +205,7 @@
         left: 50%;
         transform: translateX(-50%);
         width: 0;
-        height: 1.5px;
+        height: 1px;
         background: var(--color-active);
         transition: 0.3s all ease;
 

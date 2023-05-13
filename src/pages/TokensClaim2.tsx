@@ -13,19 +13,19 @@ export const TokensClaim2 = () => {
   return (
     <>
       <Helmet>
-        <title>Claim токенов второй фазы</title>
+        <title>Клеймение токенов второй фазы</title>
         <meta name="description" content="Eco" />
         <meta name="keywords" content="eco, crypto" />
       </Helmet>
       <SecondaryLayout>
         <section className="block-primary">
 
-          <Heading title='Claim токенов'>
-            Claim токенов второй фазы
+          <Heading title='Клеймение токенов'>
+            Клеймение токенов второй фазы
           </Heading>
 
           <Paragraph>
-            В данном разделе описано как вы сможете забрать свои токены заработанные в первом сезоне. Обратите внимание, процесс Claim токенов до лаунча ЕСО описан <Link to='/tokens-claim'>ТУТ</Link>
+            В данном разделе описано как вы сможете забрать свои токены заработанные в первом сезоне. Обратите внимание, процесс клеймение токенов до лаунча ЕСО описан <Link to='/tokens-claim'>ТУТ</Link>
           </Paragraph>
 
           <Paragraph>
@@ -36,7 +36,7 @@ export const TokensClaim2 = () => {
 
           <Paragraph>
 
-            dApp для подачи заявок запущен 25 апреля. Все, у кого есть ECO ID и баланс points по итогам 1-го сезона, смогут подать заявку на распределение $ECO.
+            dApp для подачи заявок.
           </Paragraph>
 
           <Paragraph>
@@ -64,10 +64,6 @@ export const TokensClaim2 = () => {
               Укажите на этом сервере, что вы хотите получать вознаграждения $ECO через TenderWallet.
             </Li>
           </ul>
-
-          <Paragraph>
-            Каждый, кто примет участие, получит свой Discord ID и запишет свой баланс points.
-          </Paragraph>
 
           <Paragraph>
             Те, кто хочет получить свои $ECO награды таким образом, не смогут подать заявку через официальный dAPP.
