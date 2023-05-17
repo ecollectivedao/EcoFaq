@@ -712,6 +712,8 @@ li img {
         margin: 0 auto;
         margin-top: 70px;
         flex: 0 0 50%;
+        display: flex;
+        flex-direction: column;
         @media (max-width: 1020px) {
             // width: 100%;
             flex: 0 0 100%;
@@ -752,6 +754,9 @@ li img {
         font-weight: 500;
         color: var(--color-text);
 
+    }
+    &__description {
+        flex: 1 1 auto;
     }
 }
 
