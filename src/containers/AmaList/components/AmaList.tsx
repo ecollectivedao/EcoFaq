@@ -22,7 +22,6 @@ useEffect(() => {
   getResources()
 }, [])
 
-console.log(records)
 
   const view = records?.map((record: any) => {
     return <AmaItem key={record.name} name={record.name} date={record.date} link={record.link}/>

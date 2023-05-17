@@ -13,19 +13,19 @@ export const TokensClaim2 = () => {
   return (
     <>
       <Helmet>
-        <title>Клеймение токенов второй фазы</title>
+        <title>Клейм токенов второй фазы</title>
         <meta name="description" content="Eco" />
         <meta name="keywords" content="eco, crypto" />
       </Helmet>
       <SecondaryLayout>
         <section className="block-primary">
 
-          <Heading title='Клеймение токенов'>
-            Клеймение токенов второй фазы
+          <Heading title='Клейм токенов'>
+            Клейм токенов второй фазы
           </Heading>
 
           <Paragraph>
-            В данном разделе описано как вы сможете забрать свои токены заработанные в первом сезоне. Обратите внимание, процесс клеймение токенов до лаунча ЕСО описан <Link to='/tokens-claim'>ТУТ</Link>
+            В данном разделе описано как вы сможете забрать свои токены заработанные в первом сезоне. Обратите внимание, процесс клейма токенов до лаунча ЕСО описан <Link to='/tokens-claim'>ТУТ</Link>
           </Paragraph>
 
           <Paragraph>

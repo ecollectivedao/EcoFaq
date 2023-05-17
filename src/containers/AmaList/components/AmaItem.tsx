@@ -14,7 +14,7 @@ export const AmaItem = ({name, date, link}: AmaItem) => {
       <p className="ama-item__title">
         {name}
       </p>
-      <p className="ama-item__date">{date}</p>
+      {/* <p className="ama-item__date">{date}</p> */}
       <A link={link}>
         {link}
       </A>

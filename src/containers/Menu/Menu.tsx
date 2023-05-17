@@ -67,7 +67,7 @@ const DesktopMenu = () => {
                     <Link to="/tokens" className="submenu__link">Токены</Link>
                 </motion.li>
                 <motion.li className="submenu__item">
-                    <Link to="/tokens-claim" className="submenu__link">Клеймение токенов</Link>
+                    <Link to="/tokens-claim" className="submenu__link">Клейм токенов</Link>
                 </motion.li>
                 <motion.li className="submenu__item">
                     <Link to="/eco-id" className="submenu__link">Eco ID</Link>
@@ -88,7 +88,7 @@ const DesktopMenu = () => {
                     <Link to="/seasons-eco" className="submenu__link">Сезоны ECO</Link>
                 </motion.li>
                 <motion.li className="submenu__item">
-                    <Link to="/tokens-claim2" className="submenu__link">Клеймение токенов второй фазы</Link>
+                    <Link to="/tokens-claim2" className="submenu__link">Клейм токенов второй фазы</Link>
                 </motion.li>
                 <motion.li className="submenu__item">
                     <Link to="/layer-3" className="submenu__link">Layer 3</Link>
@@ -243,7 +243,7 @@ const BurgerMenu = () => {
                             <motion.li className="burger-menu__item"
                                 variants={investorsAnimation}
                                 custom={0.25}>
-                                <Link to="/tokens-claim" className="burger-menu__link">Клеймение токенов</Link>
+                                <Link to="/tokens-claim" className="burger-menu__link">Клейм токенов</Link>
                             </motion.li>
                             <motion.li className="burger-menu__item"
                                 variants={investorsAnimation}
@@ -294,7 +294,7 @@ const BurgerMenu = () => {
                                 variants={investorsAnimation}
                                 custom={0.65}
                                 className="burger-menu__item">
-                                <Link to="/tokens-claim2" className="burger-menu__link">Клеймение токенов второй фазы</Link>
+                                <Link to="/tokens-claim2" className="burger-menu__link">Клейм токенов второй фазы</Link>
                             </motion.li>
                             <motion.li
                                 variants={investorsAnimation}
