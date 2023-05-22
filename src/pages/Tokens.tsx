@@ -66,7 +66,11 @@ export const Tokens = () => {
                     </ul>
 
                     <H3>Формула для преобразования ECOx в ECO:</H3>
-                    <Img src={formule} />
+                    {/* <Img src={formule} /> */}
+                    <div className="formula">
+                    <H3>αm = (e(βc/βi) − 1) ∗ αc</H3>
+                    </div>
+                    
                     <Paragraph>
                         <strong>am</strong> = ECO отчеканен и возвращен конвертирующей стороне
                     </Paragraph>
