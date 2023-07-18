@@ -11,9 +11,9 @@ export const MainLayout = ({ children }: { children: React.ReactNode }) => {
             <div id='stars3'></div>
 
             <main className="main">
-                <div className="container__body">
+                {/* <div className="container__body"> */}
                     {children}
-                </div>
+                {/* </div> */}
             </main>
             <Footer />
         </div>

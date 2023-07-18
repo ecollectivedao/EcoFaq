@@ -2,8 +2,10 @@ import { Helmet } from 'react-helmet'
 
 import { UsefulLinksList } from 'containers/UsefulLinksList/UsefulLinksList'
 import { SecondaryLayout } from 'layouts/SecondaryLayout'
-import { Heading } from 'ui'
+import { Heading, Img } from 'ui'
 import { useEffect } from 'react'
+
+import bg from 'assets/img/bg/20.png'
 
 export const UsefulLinks = () => {
     useEffect(() => {
@@ -21,7 +23,15 @@ export const UsefulLinks = () => {
                     <Heading title='Полезные ссылки'>
                         Cсылки на все полезные ресурсы
                     </Heading>
-                    <UsefulLinksList />
+
+                    <div className="flex-block">
+                        <div className="flex-block__text">
+                            <UsefulLinksList />
+                        </div>
+                        <div className="flex-block__image">
+                            <Img src={bg}></Img>
+                        </div>
+                    </div>
                 </section>
             </SecondaryLayout>
         </>

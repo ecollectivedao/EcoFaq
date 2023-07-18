@@ -43,9 +43,9 @@ export const Tokens = () => {
                             <Paragraph>
                                 Aдрес контракта: <br /><strong className='token__id'>0x8dBF9A4c99580fC7Fd4024ee08f3994420035727</strong>
                             </Paragraph>
-                            <Paragraph>
+                            {/* <Paragraph>
                                 Доступные биржи: <A link="https://uniswap.org/">https://uniswap.org/</A>
-                            </Paragraph>
+                            </Paragraph> */}
                         </li>
                         <li className="block-primary__gallery-item">
                             <div className="block-primary__gallery-visual">
@@ -59,16 +59,16 @@ export const Tokens = () => {
                             <Paragraph>
                                 Aдрес контракта: <br /><strong className='token__id'>0xcccD1Ba9f7acD6117834E0D28F25645dECb1736a</strong>
                             </Paragraph>
-                            <Paragraph>
+                            {/* <Paragraph>
                                 Доступные биржи: <A link="https://uniswap.org/">https://uniswap.org/</A>
-                            </Paragraph>
+                            </Paragraph> */}
                         </li>
                     </ul>
 
                     <H3>Формула для преобразования ECOx в ECO:</H3>
                     {/* <Img src={formule} /> */}
                     <div className="formula">
-                    <H3>αm = (e(βc/βi) − 1) ∗ αc</H3>
+                    <H3>α<span className="formula__small">m</span> = (<span className="formula__base">e</span> <span className="formula__degree">(βc/βi)</span> − 1) ∗ α<span className="formula__small">c</span></H3>
                     </div>
                     
                     <Paragraph>
@@ -88,7 +88,14 @@ export const Tokens = () => {
                     <A link='https://www.gate.io/'>Gate.io</A><br/>
                     <A link='https://www.bybit.com/'>Bybit</A><br/>
                     <A link='https://app.uniswap.org/#/tokens/ethereum/0xcccD1Ba9f7acD6117834E0D28F25645dECb1736 '>Uniswap</A><br/>
+                    
+                    <span className="decor__line"></span>
+                    <A 
+                    position='right'
+                    link='https://eco.org/whitepaper.pdf'>Источник</A>
                 </section>
+
+                
 
             </SecondaryLayout>
         </>

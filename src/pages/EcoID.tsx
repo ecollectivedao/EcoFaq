@@ -1,7 +1,9 @@
 import { SecondaryLayout } from "layouts/SecondaryLayout"
 import { useEffect } from "react"
 import { Helmet } from "react-helmet"
-import { A, H3, Heading, Li, Paragraph } from "ui"
+import { A, H3, Heading, Img, Li, Paragraph } from "ui"
+
+import bg from 'assets/img/bg/15 copy.png'
 
 
 export const EcoID = () => {
@@ -21,7 +23,9 @@ export const EcoID = () => {
                         Детали системы идентификации и репутации Eco ID NFT
                     </Heading>
 
-                    <Paragraph>
+                    <div className="flex-block">
+                        <div className="flex-block__text">
+                        <Paragraph>
                         Репутация и система идентификации являются критически важными для хорошо функционирующих обществ, экономик и механизмов управления. ЕСО стремится быть всем этим, и поэтому необходимо создать основы репутации.
                     </Paragraph>
 
@@ -40,6 +44,13 @@ export const EcoID = () => {
                     <Paragraph>
                         Eco ID представляют собой примитивы, разработанные для создания полностью децентрализованной и не требующей разрешения системы идентификации, которая является простой, но максимально гибкой. По своей сути, система Eco ID обеспечивает общий стандарт для оценки личности и репутации, которая заверяется верификаторами, а затем используется любыми сторонами, заинтересованными в этих оценках.
                     </Paragraph>
+
+
+                        </div>
+                        <div className="flex-block__image">
+                            <Img src={bg} />
+                        </div>
+                    </div>
 
 
                     <Paragraph>
@@ -94,7 +105,9 @@ export const EcoID = () => {
                         Вы можете найти репозиторий eco.id <A link='https://github.com/helix-foundation/eco-id'>здесь</A>, контракт <A link='https://etherscan.io/address/0x5bc2fa9426e882710d055c1a60f8cc93a31edc58'>здесь</A>, а коллекцию ECO ID NFT <A link='https://opensea.io/collection/ecoid'>здесь</A>.
                     </Paragraph>
 
-
+                    <A
+                    position="right"
+                    link='https://eco.org/eco-id'>Источник</A>
 
                 </section>
             </SecondaryLayout>

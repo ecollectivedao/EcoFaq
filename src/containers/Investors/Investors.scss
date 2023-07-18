@@ -1,5 +1,20 @@
 .investors {
+    background: var(--background);
     text-align: center;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        @media(max-width: 911px) {
+            flex-direction: column;
+        }
+    }
+
+    &__descr {
+        text-align: start;
+    }
+
     &__title {
     font-size: 40px;
     margin-top: 15px;
@@ -15,10 +30,8 @@
     &__list {
         margin: 40px auto 0;
         width: 60%;
-        // margin-top: 40px;
         display: flex;
         flex-wrap: wrap;
-        border-bottom: 1px solid var(--color-decor);
         @media(max-width: 750px) {
             width:100%
         }
@@ -31,7 +44,6 @@
         align-items: center;
         width: 25%;
         height: 50px;
-        border-top: 1px solid var(--color-decor);
         @media(max-width: 450px) {
             width:50%
         }

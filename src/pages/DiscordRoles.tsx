@@ -4,8 +4,11 @@ import { db } from 'config/firebaseConfig'
 import { doc, getDoc } from 'firebase/firestore'
 
 import { Explanation } from 'containers'
-import { H3, Heading, Li } from "ui"
+import { H3, Heading, Img, Li, Paragraph, ParagraphRight } from "ui"
 import { Helmet } from "react-helmet"
+
+import bg from 'assets/img/bg/05.png'
+
 
 
 export const DiscordRoles = () => {
@@ -53,7 +56,10 @@ export const DiscordRoles = () => {
                     <Heading title='DISCORD Роли'>
                         Описание ролей в Discord
                     </Heading>
-                    <Explanation
+
+                    <div className="flex-block">
+                        <div className="flex-block__text">
+                        <Explanation
                         name={'Moderator'}
                         explain='Члены сообщества, получившие эту роль, согласились отвечать за ведение сервера Discord и выполнять следующие обязанности:'
                         subItems={['Отвечать на вопросы новых членов сообщества и помогать им найти ответы на интересующие их вопросы, направляя их к соответствующим ресурсам',
@@ -61,6 +67,14 @@ export const DiscordRoles = () => {
                         ]}
                     />
                     {view}
+                        </div>
+                        <div className="flex-block__image">
+                            <Img src={bg}></Img>
+                        </div>
+                    </div>
+
+
+                    <ParagraphRight>Авторская статья</ParagraphRight>
                 </section>
             </SecondaryLayout>
         </>

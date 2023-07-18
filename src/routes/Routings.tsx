@@ -1,6 +1,7 @@
 import { MainPage, Discord, Tokens, TokensClaim, WelcomeToEco, WhereToBegin, DiscordRoles, CommunityManagment, AcceptedOffers, MonetaryPolicy, OffersAndVotes, Trustee, WorkMeets, AmaRecords, UsefulLinks, Whitepaper, EcoApp, EcoDebitCard, QuestsArchive, ActiveQuests, Ecollective, EcoID, AssociationGrants } from 'pages'
 import { ConsensusBot } from 'pages/ConsensusBot'
 import { EcoManagment } from 'pages/EcoManagment'
+import { Econstitution } from 'pages/Econstitution'
 import { Layer3 } from 'pages/Layer3'
 import { SeasonsEco } from 'pages/SeasonsEco'
 import { TokensClaim2 } from 'pages/TokensClaim2'
@@ -14,6 +15,7 @@ export const Routings = () => {
         <Routes>
             <Route path='/' element={<MainPage />}/>
             <Route path='/welcome' element={<WelcomeToEco />} />
+            <Route path='/econstitution' element={<Econstitution />} />
             <Route path='/discord' element={<Discord />} />
             <Route path='/tokens' element={<Tokens />} />
             <Route path='/tokens-claim' element={<TokensClaim />} />

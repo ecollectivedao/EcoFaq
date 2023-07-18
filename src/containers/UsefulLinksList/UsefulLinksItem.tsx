@@ -8,7 +8,7 @@ type UsefulLinksItemProps = {
 export const UsefulLinksItem = ({name, link}: UsefulLinksItemProps) => {
     return (
         <Li>
-            <a href={link} className="block-primary__link">{name}</a>
+            <a target='_blank' href={link} className="block-primary__link">{name}</a>
         </Li>
     )
 }

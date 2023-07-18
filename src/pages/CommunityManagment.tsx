@@ -1,10 +1,12 @@
 import { SecondaryLayout } from "layouts/SecondaryLayout"
 
 import community from 'assets/img/community.png'
-import { A, H3, Heading, Li, Paragraph } from "ui"
+import { A, H3, Heading, Img, Li, Paragraph } from "ui"
 import { ImgBig } from "ui/ImgBig/ImgBig"
 import { Helmet } from "react-helmet"
 import { useEffect } from "react"
+
+import bg from 'assets/img/bg/19.png'
 
 export const CommunityManagment = () => {
     useEffect(() => {
@@ -22,12 +24,22 @@ export const CommunityManagment = () => {
                     <Heading title='Community governance'>
                         Краткое изложение управления ЕСО-сообществом
                     </Heading>
-                    <Paragraph>
-                        Eco v1.0 реализована на Ethereum mainnet. Вся система работает по стандартному временному циклу продолжительностью примерно 14 дней (или эквивалентному блокчейну). Каждый из этих циклов представляет собой "поколение" системы, где снимки баланса позволяют использовать определенные механизмы голосования с взвешиванием долей. .
+
+
+                    <div className="flex-block">
+                        <div className="flex-block__text">
+                        <Paragraph>
+                        Eco v1.0 реализована на Ethereum mainnet. Вся система работает по стандартному временному циклу продолжительностью примерно 14 дней (или эквивалентному блокчейну). Каждый из этих циклов представляет собой "поколение" системы, где снимки баланса позволяют использовать определенные механизмы голосования с взвешиванием долей.
                     </Paragraph>
                     <Paragraph>
                         Пользователи EСО - как ECO, так и держатели ECOx - могут предлагать обновление или изменение практически каждой функции в базовых контрактах системы. Общим термином для этого является управление сообществом.
                     </Paragraph>
+                        </div>
+                        <div className="flex-block__image">
+                            <Img src={bg}></Img>
+                        </div>
+                    </div>
+
                     <Paragraph>
                         Управление сообществом происходит в соответствии со сроками генерации системы и разбито на три фазы:
                     </Paragraph>
@@ -94,6 +106,10 @@ export const CommunityManagment = () => {
                     <Paragraph>
                         Если хотите делегировать только Voting Power токенов ECOx или только Voting Power токенов ECO - в Manage Delegation нажмите advanced mode и веберите токены, силу голоса которых хотите делегировать. На данный момент можно делегировать только 100% Voting Power ECOx или ECO, частичной делегации нет.
                     </Paragraph>
+
+                    <A
+                        position="right"
+                        link='https://docs.eco.org/core-concepts/community-governance'>Источник</A>
                 </section>
             </SecondaryLayout>
         </>

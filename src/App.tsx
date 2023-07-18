@@ -23,8 +23,6 @@ export const App = () => {
     statusCheacker()
   }, [])
 
-  console.log(initiation)
-
   useEffect(() => {
     toggleTheme()
   }, [theme.theme])

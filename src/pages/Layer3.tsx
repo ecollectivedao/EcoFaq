@@ -2,12 +2,14 @@ import AmaList from 'containers/AmaList/components/AmaList'
 import { SecondaryLayout } from 'layouts/SecondaryLayout'
 import React, { useEffect } from 'react'
 import { Helmet } from 'react-helmet'
-import { H3, Heading, Li, Paragraph } from 'ui'
+import { H3, Heading, Img, Li, Paragraph } from 'ui'
+
+import bg from 'assets/img/bg/12.png'
 
 export const Layer3 = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
-}, [])
+  }, [])
   return (
     <>
       <Helmet>
@@ -22,11 +24,21 @@ export const Layer3 = () => {
             Основные цели и задачи
           </Heading>
 
-          <Paragraph>
-            Роль Layer 3 была присвоена активным членам Ecommunity, которые на протяжении длительного периода времени вносили свой вклад в развитие сообщества.
-            Целью введения роли Layer 3 было сохранение, поощрение и создание механизмов поддержки развития общей культуры Ecommunity.
-            Благодаря предоставлению участникам Layer 3 возможности разрабатывать и администрировать свои собственные структуры стимулирования и системы вознаграждений, путем достижения консенсуса, группа Layer 3 является первым шагом в создании децентрализованной системы управления Eco protocol.
-          </Paragraph>
+          <div className="flex-block">
+            <div className="flex-block__text">
+              <Paragraph>
+                Роль Layer 3 была присвоена активным членам Ecommunity, которые на протяжении длительного периода времени вносили свой вклад в развитие сообщества.
+                Целью введения роли Layer 3 было сохранение, поощрение и создание механизмов поддержки развития общей культуры Ecommunity.
+              </Paragraph>
+
+              <Paragraph>
+              Благодаря предоставлению участникам Layer 3 возможности разрабатывать и администрировать свои собственные структуры стимулирования и системы вознаграждений, путем достижения консенсуса, группа Layer 3 является первым шагом в создании децентрализованной системы управления Eco protocol.
+              </Paragraph>
+            </div>
+            <div className="flex-block__image">
+              <Img src={bg}></Img>
+            </div>
+          </div>
 
           <Paragraph>
             Основные задачи Layer 3:

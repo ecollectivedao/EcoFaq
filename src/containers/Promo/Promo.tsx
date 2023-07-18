@@ -1,33 +1,37 @@
 import Typed from 'react-typed'
+import promo from 'assets/img/promo.png'
+
 
 import './Promo.scss'
+
+import { Link } from 'react-scroll'
 
 export const Promo = () => {
     return (
         <section className='promo'>
-            {/* <h1 className="promo__title">
-                Eco - это не банк
-            </h1> */}
-            <h1 className="promo__subtitle">
-                ЕСОсommunity - это сообщество людей с единой целью  
+            <div className="container promo__container">
+                <h1 className="promo__subtitle">
+                    ЕСОmmunity
+                </h1>
+                <p className="promo__descr">
+                    Сообщество людей с единой целью для ЕСО протокола. На этом сайте Вы найдете информацию о проекте ЕСО, задания, перевод документов и многое другое. Сайт находится на ранней стадии.
+                </p>
+
+                <Link
+                    className='button'
+                    to="join-us"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}>
+                    Присоединяйся к нам
+                </Link>
+
+                {/* <div className="promo__poster"> */}
+                <img className='promo__image' src={promo} alt="promo" />
+                {/* </div> */}
                 
-                <span className='promo__typing'>
-                <Typed
-                     strings={['развитие',
-                                'обучение',
-                                'объедение']}
-                     typeSpeed={150}
-                     backSpeed={100}
-                     startDelay={1500}
-                     loop
-                />
-                </span>
-                для ЕСОпротокола
-            </h1>
-            <p className="promo__descr">
-                На данном сайте вы узнаете всю основную информацию по проекту ЕСО, актуальные задания, перевод важных документов и т.д <br />
-                Сайт находится на ранней стадии
-            </p>
+            </div>
         </section>
     )
 }

@@ -1,26 +1,70 @@
 body[theme='dark'] {
-    // background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-    background: #131b25;
+    background: #000;
 
-    --background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-    --color-text: #e0dfdf;
+    --background: #000;
+    --background2: #000;
+
+    --color-text-static: #000;
+
+    // --background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    --color-text: #F9F9F9;
     --color-active: #f0e79c;
+    --color-text-darkbutton: black;
     --color-text2: #cccccc;
     --color-alter: #3b3b3b75;
     --color-decor: rgba(21, 21, 21, 0.16);
-    --main-page-gradient: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    // --main-page-gradient: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    --color-hover: rgba(255,255,255, 0.6);
+    --color-button-hover1: #484848;
+    --color-button-hover2: #D7D7D7;
+    --color-button-dark: #231F20;
+    --color-button-hover-dark: #484848    ;
+    --color-button-hover-light: #D7D7D7;
+    --background-button-join: #484848;
+    --background-button-join-hover: #3a3738;
+    
+
+    --color-border: #484848;
+
+    --main-page-gradient: linear-gradient(90deg, rgba(223,221,134,1) 2%, rgba(213,231,215,1) 70%);
+
+    --background-menu: #2F2F2F;
+    --background-menu-hover: #231F20;
+    
 }
 
 body[theme='light'] {
-    background: #d4d27fa7;
+    background: #fff;
 
-    --background: #fffffb;
-    --color-text: #27292e;
+    --background: #fff;
+    --background2: #F9F9F5;
+
+    --color-text: #231F20;
+    --color-text-darkbutton: #F9F9F9;
     --color-active: #924f34;
     --color-text2: #6d7079;
     --color-alter: rgba(249,249,245,0.75);
     --color-decor: rgba(21, 21, 21, 0.16);
-    // --main-page-gradient: linear-gradient(-45deg, #dfdd86, #d5e7d7, #fffffb); 
-    --main-page-gradient: linear-gradient(-45deg, #dfdd86, #d5e7d7, #c7c785); 
+    --main-page-gradient: linear-gradient(90deg, rgba(223,221,134,1) 2%, rgba(213,231,215,1) 70%);
 
+    --color-hover: rgba(0, 0, 0, 0.607);
+
+    --color-border: rgba(0, 0, 0, 0.1);
+
+    --color-button-hover1: #F3F3F3;
+    --color-button-hover2: #2F2F2F;
+    --color-button-light: #F9F9F9;
+    --color-button-dark: #231F20;
+    --background-button-join: #F3F3F3;
+    --background-button-join-hover: #D7D7D7;
+
+
+    --color-button-hover-dark: #484848
+    ;
+    --color-button-hover-light: #D7D7D7;
+
+    --color-text-static: #000;
+
+    --background-menu: #FFF;
+    --background-menu-hover: #F3F3F3;
 }

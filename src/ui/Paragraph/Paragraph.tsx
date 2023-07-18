@@ -5,14 +5,17 @@ import { textAnimation } from 'config/animation'
 import './Paragraph.scss'
 
 type ParagraphProps = {
-    children: React.ReactNode
+    children: React.ReactNode,
+    dark?: boolean;
+    noanim?: boolean
 }
 
-export const Paragraph = ({ children }: ParagraphProps) => {
+export const Paragraph = ({ children, dark, noanim }: ParagraphProps) => {
     return (
         <motion.p
+            style={dark ? {color: 'var(--color-text)'}: {color: 'var(--color-text2)'}}
             className="paragraph"
-            initial='hidden'
+            initial={noanim ? '' : 'hidden'}
             whileInView='visible'
             variants={textAnimation}
             viewport={{ amount: 0.1, once: true }}

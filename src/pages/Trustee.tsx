@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet'
 
 import { SecondaryLayout } from 'layouts/SecondaryLayout'
 import { TrusteeList } from 'containers'
-import { Heading } from 'ui'
+import { A, Heading } from 'ui'
 import { useEffect } from 'react'
 
 export const Trustee = () => {
@@ -24,6 +24,8 @@ export const Trustee = () => {
           </Heading>
 
           <TrusteeList />
+
+          <A link='https://discord.com/channels/768556386404794448/1046765965523816548'>Источник</A>
         </section>
       </SecondaryLayout>
     </>

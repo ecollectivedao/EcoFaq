@@ -20,7 +20,7 @@ export const QuestItem = ({name, description, award, link, extralink, rules }: Q
         <p className="block-primary__text">
         {link && <a target='_blank' href={link}>Официальный анонс</a>}
         </p>
-        <p className="block-primary__text"><strong>Награда</strong>: {award ? award : 'нет'}</p>
+        {award && <p className="block-primary__text"><strong>Награда</strong>: {award}</p>}
         {description && <p className="block-primary__text">{description}</p>}
         {rules && 
         <>

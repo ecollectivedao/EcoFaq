@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.49470bd5.css",
+    "main.js": "/static/js/main.033457f2.js",
+    "static/media/12.png": "/static/media/12.1e3d878b1a80e701e6f6.png",
+    "static/media/19.png": "/static/media/19.49cc827f07afec07e627.png",
+    "static/media/01.png": "/static/media/01.ce102de60a19019c192a.png",
+    "static/media/16.png": "/static/media/16.36811acc24ccaaffffad.png",
+    "static/media/18.png": "/static/media/18.8c661b6ec139dc867307.png",
+    "static/media/15 copy.png": "/static/media/15 copy.4892d82458e1e6c58dd5.png",
+    "static/media/15.png": "/static/media/15.7b256ad71cdbf6957e12.png",
+    "static/media/02.png": "/static/media/02.d188ae513b683d67bb36.png",
+    "static/media/07.png": "/static/media/07.d950f4e71a8dfc3bba99.png",
+    "static/media/coins.png": "/static/media/coins.7217ebd80b11b6d386f5.png",
+    "static/media/10.png": "/static/media/10.f22b31a6c76186b4f2a2.png",
+    "static/media/promo.png": "/static/media/promo.ffc76888a2dc74856863.png",
+    "static/media/20.png": "/static/media/20.00714221f58a2a9a2dd3.png",
+    "static/media/03.png": "/static/media/03.54fb52928bffab12ebd4.png",
+    "static/media/21.png": "/static/media/21.315f49f17f2660d26cd1.png",
+    "static/media/eco_instructions.png": "/static/media/eco_instructions.be54dbfe1f9a0c178455.png",
+    "static/media/05.png": "/static/media/05.1407b920586fbb27aac6.png",
+    "static/media/ECO.png": "/static/media/ECO.f9a2df8781ec3863634d.png",
+    "static/media/ECOx.png": "/static/media/ECOx.17cb3bea7d95951ec781.png",
+    "static/media/Rubik-Medium.ttf": "/static/media/Rubik-Medium.115acab02aed19275f71.ttf",
+    "static/media/Rubik-SemiBold.ttf": "/static/media/Rubik-SemiBold.1997afa48cd24468abb6.ttf",
+    "static/media/Rubik-Bold.ttf": "/static/media/Rubik-Bold.433b599535e1d929aaf8.ttf",
+    "static/media/Rubik-Regular.ttf": "/static/media/Rubik-Regular.f887c9f4ac165f5e1912.ttf",
+    "static/media/Rubik-Light.ttf": "/static/media/Rubik-Light.44b62d60249f23b2bf50.ttf",
+    "static/media/community.png": "/static/media/community.3a74099c68aef1973092.png",
+    "index.html": "/index.html",
+    "main.49470bd5.css.map": "/static/css/main.49470bd5.css.map",
+    "main.033457f2.js.map": "/static/js/main.033457f2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49470bd5.css",
+    "static/js/main.033457f2.js"
+  ]
+}

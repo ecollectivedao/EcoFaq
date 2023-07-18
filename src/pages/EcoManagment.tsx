@@ -2,7 +2,9 @@ import { SecondaryLayout } from "layouts/SecondaryLayout"
 import { useEffect } from "react"
 import { Helmet } from "react-helmet"
 import { Link } from "react-router-dom"
-import { Heading, Paragraph } from "ui"
+import { Heading, Paragraph, ParagraphRight } from "ui"
+
+import bg from 'assets/img/bg/15.png'
 
 export const EcoManagment = () => {
     useEffect(() => {
@@ -21,6 +23,7 @@ export const EcoManagment = () => {
                     <Heading title='Управление ЕСО'>
                         Краткое изложение управления ЕСО-сообществом
                     </Heading>
+                    <img className='poster-bg' src={bg} alt="poster" />
                     <Paragraph>
                         В EСО есть два основных процесса управления, которые идут параллельно:
                         управление сообществом и управление денежными средствами.
@@ -31,6 +34,8 @@ export const EcoManagment = () => {
                         Попечители (<Link to='/discord-roles'>Trusty</Link>) имеют единственный мандат на управление монетарной политикой: максимизировать совокупное богатство, хранящееся в ECO - чем успешнее ECO как валюта, тем больше они выполнили свой мандат. Каким образом члены Попечительского совета в конечном итоге выполняют этот мандат, зависит от их усмотрения посредством проведения денежно-кредитной политики.
                         Попечители ECO работают в течение срока, но могут быть смещены в любое время через управление сообществом; они также могут быть переизбраны по истечении срока полномочий.
                     </Paragraph>
+
+                    <ParagraphRight>Авторская статья</ParagraphRight>
 
                 </section>
             </SecondaryLayout>

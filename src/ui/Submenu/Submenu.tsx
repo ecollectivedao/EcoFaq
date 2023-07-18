@@ -10,10 +10,7 @@ type SubmenuProps = {
 export const Submenu = ({name, children}: SubmenuProps) => {
     const [isOpen, setIsOpen] = useState(false)
 
-
     const subMenuRef = useRef<HTMLLIElement>(null)
-
-
 
     useEffect(() => {
         const handler = (event: MouseEvent) => {
@@ -27,28 +24,15 @@ export const Submenu = ({name, children}: SubmenuProps) => {
     }, [setIsOpen])
 
     const isActive = `menu__list-submenu submenu ${isOpen ? 'opened' : ''}`
+
+
     return (
         <li className="menu__list-item"
-        onClick={() => setIsOpen(state => !state)}
+        // whileHover={() => setIsOpen(state => !state)}
         ref={subMenuRef}>
                 <p className={`menu__list-item ${isOpen ? 'active' : ''}`}>{name}</p> 
                 <ul className={isActive}>
                     {children}
-                    {/* <li className="submenu__item">
-                        <a href="#" className="submenu__link">Welcome to ECO</a>
-                    </li>
-                    <li className="submenu__item">
-                        <a href="#" className="submenu__link">С чего начать?</a>
-                    </li>
-                    <li className="submenu__item">
-                        <a href="#" className="submenu__link">Tokens</a>
-                    </li>
-                    <li className="submenu__item">
-                        <a href="#" className="submenu__link">Claim токенов</a>
-                    </li>
-                    <li className="submenu__item">
-                        <a href="#" className="submenu__link">Discord сервер</a>
-                    </li> */}
                 </ul>
             </li>
     )

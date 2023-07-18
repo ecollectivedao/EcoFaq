@@ -15,7 +15,7 @@ export const Whitepaper = () => {
             Whitepaper
         </Heading>
         <H3>
-          Оригинал документа <a href="https://eco.org/whitepaper.pdf">https://eco.org/whitepaper.pdf</a>
+          Оригинал документа <a target='_blank' href="https://eco.org/whitepaper.pdf">https://eco.org/whitepaper.pdf</a>
         </H3>
         <Paragraph>
           <strong>ЕСО: Криптовалюта с Независимой монетарной политикой</strong> <br />

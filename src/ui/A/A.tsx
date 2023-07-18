@@ -5,15 +5,16 @@ import './A.scss'
 
 type AProps = {
     link: string,
-    children: string
+    children: string,
+    position?: string
 }
 
-export const A = ({ link, children }: AProps) => {
+export const A = ({ link, children, position }: AProps) => {
     return (
         <motion.a
             href={link}
             target='_blank'
-            className="animated-link"
+            className={position ? 'animated-link right' : 'animated-link'}
             initial='hidden'
             whileInView='visible'
             variants={textAnimation}

@@ -4,6 +4,8 @@ import { Helmet } from "react-helmet"
 import { Link } from "react-router-dom"
 import { Heading, H3, Paragraph, A } from "ui"
 
+import bg from 'assets/img/bg/16.png'
+
 
 export const SeasonsEco = () => {
   useEffect(() => {
@@ -22,6 +24,8 @@ export const SeasonsEco = () => {
           <Heading title='Сезоны ЕСО'>
             Сезоны
           </Heading>
+
+          <img className='poster-bg' src={bg} alt="poster" />
 
           <H3>Сезон 1 официально закончится в пятницу, 31 марта 2023 г., 19:00.</H3>
           <H3>Cезон 2 официально начался 31 марта 2023 г. в 19.31</H3>

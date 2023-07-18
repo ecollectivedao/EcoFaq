@@ -1,0 +1,27 @@
+.join-us {
+    text-align: center;
+    margin: 0 auto;
+    background: var(--main-page-gradient);
+    
+    p {
+        max-width: 805px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .container h2, .container > p {
+        color: #231F20!important;
+    }
+
+
+    &__socials {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+        gap: 30px;
+        margin-top: 33px;
+        text-align: start;
+    }
+}

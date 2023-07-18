@@ -1,0 +1,30 @@
+.join-item {
+    background: var(--background);
+    border-radius: 24px;
+    padding: 32px;
+    max-width: 296px;
+    width: 100%;
+    max-height: 368px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    // .button {
+       
+        
+    // }
+    a {
+        margin: 35px 0 0 0!important;
+        display: block!important;
+        background: var(--background-button-join);
+        color: var(--color-text);
+        transition: all 0.3s ease;
+    }
+    a:hover{
+        background: var(--background-button-join-hover)!important;
+    }
+
+    p {
+        flex: 1 1 auto;
+    }
+}

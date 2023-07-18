@@ -15,15 +15,7 @@
         width: 100%;
         margin-right: -20px
     };
-    &:hover .logo__link {
-        color: var(--color-active);
-    }
-}
-
-.logo a svg path {
-    fill: var(--color-text);
-    transition: 0.3s ease all
-}
-.logo:hover a svg path {
-    fill: var(--color-active)
+    // &:hover .logo__link {
+    //     color: var(--color-active);
+    // }
 }

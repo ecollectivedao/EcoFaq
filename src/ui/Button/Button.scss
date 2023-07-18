@@ -1,0 +1,27 @@
+.button {
+    background: var(--color-text);
+    padding: 16px 32px;
+    color: var(--color-text-darkbutton);
+    border-radius: 48px;
+    max-width: max-content;
+    margin: 0 auto;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    line-height: 1.5;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+
+    &__link {
+        text-decoration: none;
+        color: var(--color-text-darkbutton);
+    }
+}
+.button:hover{
+    background: var(--color-button-hover2);
+}
+
+.button.gray {
+    background: var(--color-button-hover1);
+    color: var(--color-text);
+}
